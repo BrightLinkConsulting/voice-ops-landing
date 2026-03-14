@@ -1,0 +1,49 @@
+'use client';
+
+import { Play } from 'lucide-react';
+import { AnimatedSection } from '@/components/MotionWrapper';
+
+export default function VSLVideo() {
+  return (
+    <section className="w-full py-20 md:py-32 px-4 md:px-8 bg-[#0A0A0B]">
+      <div className="max-w-6xl mx-auto">
+        <AnimatedSection>
+          <div className="space-y-8 md:space-y-12">
+            {/* Eyebrow */}
+            <div className="text-center">
+              <p className="text-xs uppercase tracking-[0.2em] text-[#E8600A] font-body">
+                THE 3-MINUTE OVERVIEW
+              </p>
+            </div>
+
+            {/* Headline */}
+            <div className="text-center">
+              <h2 className="font-display text-3xl md:text-5xl font-bold leading-tight">
+                Watch Before You Read Anything Else
+              </h2>
+            </div>
+
+            {/* Video Placeholder */}
+            <div className="flex justify-center">
+              <div className="relative w-full max-w-4xl aspect-video bg-[#111114] border border-[#1E1E24] rounded-xl flex items-center justify-center group cursor-pointer hover:border-[#E8600A] transition-all duration-300 hover:shadow-[0_0_40px_rgba(232,96,10,0.2)]">
+                {/* Replace src with Loom/Vimeo embed URL */}
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[rgba(0,0,0,0.3)] rounded-xl pointer-events-none" />
+                <button className="relative w-16 h-16 rounded-full bg-[#E8600A] flex items-center justify-center hover:bg-[#d4570a] transition-all duration-200 hover:shadow-[0_0_30px_rgba(232,96,10,0.4)] group-hover:scale-110 transform">
+                  <Play size={32} className="text-white fill-white ml-1" />
+                </button>
+              </div>
+            </div>
+
+            {/* Quote */}
+            <div className="text-center">
+              <blockquote className="italic text-[#A1A1AA] text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+                "The real bottleneck isn't your expertise. It's the administrative work stealing your time and attention. Fix that, and suddenly you have bandwidth to think strategically, close bigger deals, and actually enjoy the business you've built."
+              </blockquote>
+              <p className="text-[#52525B] text-sm mt-4 font-semibold">— Mike Walker</p>
+            </div>
+          </div>
+        </AnimatedSection>
+      </div>
+    </section>
+  );
+}
