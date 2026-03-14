@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { motion, useReducedMotion, type Variants } from 'framer-motion'
+import { motion, type Variants } from 'framer-motion'
 
 const premiumEase = [0.22, 1, 0.36, 1] as const
 
@@ -30,11 +30,6 @@ export const childVariants: Variants = {
   },
 }
 
-export function useAnimationEnabled() {
-  const prefersReduced = useReducedMotion()
-  return !prefersReduced
-}
-
 export function AnimatedSection({
   children,
   className = '',
@@ -48,12 +43,6 @@ export function AnimatedSection({
   style?: React.CSSProperties
   variants?: Variants
 }) {
-  const shouldAnimate = useAnimationEnabled()
-
-  if (!shouldAnimate) {
-    return <div id={id} className={className} style={style}>{children}</div>
-  }
-
   return (
     <motion.div
       id={id}
@@ -76,12 +65,6 @@ export function StaggerContainer({
   children: React.ReactNode
   className?: string
 }) {
-  const shouldAnimate = useAnimationEnabled()
-
-  if (!shouldAnimate) {
-    return <div className={className}>{children}</div>
-  }
-
   return (
     <motion.div
       className={className}
@@ -102,12 +85,6 @@ export function StaggerChild({
   children: React.ReactNode
   className?: string
 }) {
-  const shouldAnimate = useAnimationEnabled()
-
-  if (!shouldAnimate) {
-    return <div className={className}>{children}</div>
-  }
-
   return (
     <motion.div className={className} variants={childVariants}>
       {children}
