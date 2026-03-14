@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic'
 import Navigation from '@/components/Navigation'
 import Hero from '@/components/Hero'
 import VSLVideo from '@/components/VSLVideo'
@@ -10,9 +11,11 @@ import ComparisonTable from '@/components/ComparisonTable'
 import Integrations from '@/components/Integrations'
 import Testimonials from '@/components/Testimonials'
 import AboutMike from '@/components/AboutMike'
-import FAQ from '@/components/FAQ'
+
 import FinalCTA from '@/components/FinalCTA'
 import Footer from '@/components/Footer'
+
+const FAQ = dynamic(() => import('@/components/FAQ'), { ssr: false })
 
 function SectionDivider() {
   return (

@@ -121,7 +121,7 @@ function Terminal() {
 
       {/* Messages Container */}
       <div className="space-y-3 overflow-hidden max-h-64">
-        {displayedMessages.map((message, index) => (
+        {displayedMessages.filter(Boolean).map((message, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 10 }}
