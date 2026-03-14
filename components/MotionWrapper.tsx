@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import React from 'react'
 import { motion, useReducedMotion, type Variants } from 'framer-motion'
 
 const premiumEase = [0.22, 1, 0.36, 1] as const

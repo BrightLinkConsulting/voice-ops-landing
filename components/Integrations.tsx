@@ -55,7 +55,7 @@ export default function Integrations() {
         {/* Marquee for mobile/tablet, hidden on desktop */}
         <div className="block lg:hidden mb-12">
           <div className="overflow-hidden">
-            <div className="flex gap-4 animate-scroll">
+            <div className="flex gap-4 animate-marquee">
               {[...integrations, ...integrations].map((integration, idx) => (
                 <div
                   key={idx}
@@ -84,7 +84,7 @@ export default function Integrations() {
                 style={{
                   width: `${size}px`,
                   height: `${size}px`,
-                  animation: `orbit-${ringIndex} ${8 + ringIndex * 6}s linear infinite`,
+                  animation: `orbit ${8 + ringIndex * 6}s linear infinite`,
                 }}
               />
             ))}
@@ -106,7 +106,7 @@ export default function Integrations() {
                     <div
                       className="absolute w-full h-full"
                       style={{
-                        animation: `counter-orbit-${ringIndex} ${8 + ringIndex * 6}s linear infinite`,
+                        animation: `counter-orbit ${8 + ringIndex * 6}s linear infinite`,
                       }}
                     >
                       <div
@@ -157,74 +157,7 @@ export default function Integrations() {
         </p>
       </div>
 
-      <style jsx>{`
-        @keyframes scroll {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-
-        .animate-scroll {
-          animation: scroll 20s linear infinite;
-        }
-
-        @keyframes orbit-0 {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg);
-          }
-        }
-
-        @keyframes orbit-1 {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg);
-          }
-        }
-
-        @keyframes orbit-2 {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg);
-          }
-        }
-
-        @keyframes counter-orbit-0 {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(-360deg);
-          }
-        }
-
-        @keyframes counter-orbit-1 {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(-360deg);
-          }
-        }
-
-        @keyframes counter-orbit-2 {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(-360deg);
-          }
-        }
-      `}</style>
+      
     </AnimatedSection>
   );
 }
