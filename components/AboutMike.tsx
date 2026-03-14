@@ -19,15 +19,15 @@ export default function AboutMike() {
 
             <div className="space-y-4 text-[#A1A1AA] leading-relaxed">
               <p>
-                Five years ago, I was drowning in the same operational chaos you might be facing right now. Running a business meant choosing between growth and sanity. Every new client meant more admin work, more context switching, more mental overhead. I tried every tool, every system, every productivity hack. Nothing stuck.
+                With over two decades building brands, leading launches, and architecting marketing and operational systems, I&apos;ve seen firsthand how difficult it can be to earn and keep the attention of your market — and how much harder it is to scale without the right infrastructure.
               </p>
 
               <p>
-                So I started building. Not another app. Not another tool to add to the stack. I built a way to think about operations differently—voice-first, system-driven, designed for founders who want to scale without scaling headcount. The same systems that freed me from the grind are now helping 100+ entrepreneurs do the same.
+                Voice Ops is the most complete version of everything I&apos;ve been building toward for the past several years. The client acquisition system, the retention intelligence, and now the AI operating layer that ties it all together into something you can actually run from your phone.
               </p>
 
               <p>
-                Voice Ops isn't a service we offer. It's a philosophy we live. Your business should run without your constant intervention. Your team should focus on high-impact work. Your growth shouldn't demand another app or another login.
+                I look forward to learning more about your objectives and exploring whether this is the right system for your next stage of growth.
               </p>
             </div>
 

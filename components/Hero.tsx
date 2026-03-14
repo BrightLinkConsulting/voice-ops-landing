@@ -216,7 +216,7 @@ export default function Hero() {
             {/* Subheadline */}
             <motion.div variants={itemVariants}>
               <p className="text-lg text-[#A1A1AA] font-body leading-relaxed max-w-xl">
-                Your expertise is valuable. Your time isn't. We automate the busywork so you can focus on high-leverage decisions. Let AI handle scheduling, follow-ups, and data management while you scale your impact and revenue.
+                Built for subject matter experts who are done managing software and ready to command their business instead. We install a complete client acquisition system inside GoHighLevel — funnels, automations, community, and an AI operating layer you run by voice from your phone. Your expertise reaches more people. Your business handles the rest.
               </p>
             </motion.div>
 

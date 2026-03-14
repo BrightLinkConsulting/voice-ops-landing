@@ -9,41 +9,41 @@ const ThreePartSystem = () => {
       number: 'LAYER 01',
       title: 'Your Entire Acquisition Engine, Built and Live',
       icon: Zap,
-      body: 'We install your complete lead generation and customer acquisition stack in a single engagement. Everything from landing pages to conversation to fulfillment runs through a single, unified system. No more stitching platforms together. This is your personal acquisition machine.',
+      body: 'Four complete funnel types installed inside your GoHighLevel sub-account — lead magnet funnel, front-end SLO with upsells, VSL with booking integration, and flagship offer page. All email and SMS automations pre-loaded. Your community infrastructure (free group, paid group, courses) fully configured. This is not a template you fill in. It\'s a finished, running system.',
       bullets: [
-        'Custom landing pages auto-generated from your existing content',
-        'Live phone and SMS concierge powered by AI Voice',
-        'Automated lead qualification and routing',
-        'Multi-channel conversation memory and context',
-        'Direct integration with your CRM and delivery infrastructure',
-        'Real-time notifications and escalations'
+        'Lead Magnet Funnel + automation sequence',
+        'SLO funnel with 2 upsells',
+        'VSL + Call Booking funnel',
+        'Flagship Offer Page',
+        'Free + Paid community groups',
+        'Products and courses infrastructure'
       ]
     },
     {
       number: 'LAYER 02',
       title: 'Talk to Your Business. Watch It Move.',
       icon: Mic,
-      body: 'The system doesn\'t just answer calls. It runs your business. Every conversation is an instruction set. When a customer tells the system what they need, the system doesn\'t respond with a document. It moves.',
+      body: 'Your dedicated Telegram bot, connected to your entire GoHighLevel account. Ask what\'s in your pipeline. Send emails by voice. Update client profiles, log notes, query leads, trigger follow-up sequences — all without opening a dashboard. This is the interface shift. The same way email moved from desktop to mobile, your business operations are moving from dashboards to conversation.',
       bullets: [
-        'Voice commands trigger business actions in real time',
-        'Conversations become automated workflows instantly',
-        'CRM updates happen as customers are still talking',
-        'Decision trees adapt based on conversation context',
-        'Multi-step processes execute in a single command'
+        'Dedicated Telegram bot connected to your GHL',
+        'Voice and text commands executed across your CRM',
+        'Pipeline queries and deal status on demand',
+        'CRM note logging and contact updates by voice',
+        'Morning brief delivered daily — what needs attention'
       ]
     },
     {
       number: 'LAYER 03',
       title: 'Your Business, Monitored 24/7. Insights Delivered Before You Ask.',
       icon: Brain,
-      body: 'This isn\'t a dashboard you check. This is a system that briefed you. While you sleep, while you\'re in meetings, while you\'re in the car—your business is being watched. Patterns are being tracked. Anomalies are being flagged. You wake up briefed.',
+      body: 'Powered by ClientBloom — a proprietary intelligence layer that tracks every client relationship based on their individual baseline behavior, not generic benchmarks. When a client\'s engagement deviates from their normal pattern, you find out before they go quiet. The system proactively surfaces who needs attention, what the risk signals are, and what to do about them. The morning brief isn\'t just data. It\'s a briefing from a system that\'s been watching while you slept.',
       bullets: [
-        'Predictive alerts on customer churn and expansion signals',
-        'Overnight analysis of all conversation and transaction data',
-        'Automated insights on performance bottlenecks',
-        'Revenue forecasting based on real pipeline movement',
-        'Competitive intelligence from customer conversations',
-        'Custom intelligence briefings delivered on your schedule'
+        'Individual client baseline behavioral scoring',
+        'Proactive churn risk detection',
+        'Engagement pattern monitoring across platforms',
+        'Daily CEO brief with recommended actions',
+        'Decision journal with automated review tracking',
+        'OPI (Operating Performance Index) scoring'
       ],
       badge: 'PRO'
     }

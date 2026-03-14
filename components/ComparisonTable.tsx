@@ -5,15 +5,19 @@ import { AnimatedSection } from '@/components/MotionWrapper';
 
 export default function ComparisonTable() {
   const features = [
-    { name: 'Voice-Triggered Automations', voiceOps: true, ghl: true, selfSetup: false, templatesOnly: false },
-    { name: 'Done-For-You Systems Build', voiceOps: true, ghl: false, selfSetup: false, templatesOnly: false },
-    { name: 'Custom Integration Development', voiceOps: true, ghl: false, selfSetup: false, templatesOnly: false },
-    { name: 'Workflow Optimization', voiceOps: true, ghl: false, selfSetup: false, templatesOnly: false },
-    { name: 'Analytics & Reporting', voiceOps: true, ghl: true, selfSetup: true, templatesOnly: false },
-    { name: 'White-Label Capabilities', voiceOps: true, ghl: true, selfSetup: false, templatesOnly: false },
-    { name: 'Dedicated Support', voiceOps: true, ghl: false, selfSetup: false, templatesOnly: false },
-    { name: 'Multi-Platform Integration', voiceOps: true, ghl: true, selfSetup: true, templatesOnly: true },
-    { name: 'Pre-Built Templates', voiceOps: true, ghl: true, selfSetup: true, templatesOnly: true },
+    { name: 'GHL Platform', diy: '✓ Self-setup', launch: '✓ Built for you', pro: '✓ Built for you' },
+    { name: 'Funnel Templates', diy: 'Templates only', launch: '✓ Installed + live', pro: '✓ Installed + live' },
+    { name: 'Done-for-you build', diy: false, launch: true, pro: true },
+    { name: 'Community infrastructure', diy: false, launch: true, pro: true },
+    { name: 'Voice command interface', diy: false, launch: true, pro: true },
+    { name: 'CRM commands by voice', diy: false, launch: true, pro: true },
+    { name: 'Daily AI business brief', diy: false, launch: false, pro: true },
+    { name: 'Client retention scoring', diy: false, launch: false, pro: true },
+    { name: 'Proactive churn detection', diy: false, launch: false, pro: true },
+    { name: 'Pipeline health alerts', diy: false, launch: false, pro: true },
+    { name: 'Quarterly strategy audit', diy: false, launch: false, pro: true },
+    { name: 'Monthly cost', diy: '$97–$197', launch: '$197', pro: '$497' },
+    { name: 'Setup investment', diy: '$0', launch: '$1,997', pro: '$4,997' },
   ];
 
   const renderCell = (value: boolean | string) => {
@@ -49,17 +53,14 @@ export default function ComparisonTable() {
                 <th className="sticky left-0 bg-[#0A0A0B] z-10 text-left py-4 px-4 text-xs uppercase tracking-wider text-[#52525B] font-semibold">
                   Feature
                 </th>
-                <th className="text-center py-4 px-4 text-xs uppercase tracking-wider text-[#52525B] font-semibold min-w-[120px]">
-                  Voice Ops
+                <th className="text-center py-4 px-4 text-xs uppercase tracking-wider text-[#52525B] font-semibold min-w-[140px]">
+                  DIY / GHL Alone
                 </th>
-                <th className="text-center py-4 px-4 text-xs uppercase tracking-wider text-[#52525B] font-semibold min-w-[120px]">
-                  GHL Pro
+                <th className="text-center py-4 px-4 text-xs uppercase tracking-wider text-[#52525B] font-semibold min-w-[140px]">
+                  Voice Ops Launch
                 </th>
-                <th className="text-center py-4 px-4 text-xs uppercase tracking-wider text-[#52525B] font-semibold min-w-[120px]">
-                  Self-setup
-                </th>
-                <th className="text-center py-4 px-4 text-xs uppercase tracking-wider text-[#52525B] font-semibold min-w-[120px]">
-                  Templates Only
+                <th className="text-center py-4 px-4 text-xs uppercase tracking-wider text-brand-orange font-semibold min-w-[140px]">
+                  Voice Ops Pro
                 </th>
               </tr>
             </thead>
@@ -72,18 +73,17 @@ export default function ComparisonTable() {
                   <td className="sticky left-0 bg-inherit z-10 text-left py-4 px-4 text-sm font-medium text-[#A1A1AA]">
                     {feature.name}
                   </td>
-                  <td className="text-center py-4 px-4">{renderCell(feature.voiceOps)}</td>
-                  <td className="text-center py-4 px-4">{renderCell(feature.ghl)}</td>
-                  <td className="text-center py-4 px-4">{renderCell(feature.selfSetup)}</td>
-                  <td className="text-center py-4 px-4">{renderCell(feature.templatesOnly)}</td>
+                  <td className="text-center py-4 px-4">{renderCell(feature.diy)}</td>
+                  <td className="text-center py-4 px-4">{renderCell(feature.launch)}</td>
+                  <td className="text-center py-4 px-4">{renderCell(feature.pro)}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
 
-        <p className="text-xs text-[#52525B] text-center mt-8">
-          Voice Ops includes professional implementation, ongoing optimization, and white-label capabilities. Other solutions require manual configuration and technical knowledge.
+        <p className="text-xs text-[#52525B] text-center mt-8 max-w-3xl mx-auto">
+          *DIY/GHL column reflects self-managed setups using standard GHL tools and publicly available snapshot resources. No voice command or AI intelligence layer is included in any off-the-shelf GHL configuration.
         </p>
       </div>
     </AnimatedSection>

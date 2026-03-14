@@ -37,9 +37,9 @@ export default function VSLVideo() {
             {/* Quote */}
             <div className="text-center">
               <blockquote className="italic text-[#A1A1AA] text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
-                "The real bottleneck isn't your expertise. It's the administrative work stealing your time and attention. Fix that, and suddenly you have bandwidth to think strategically, close bigger deals, and actually enjoy the business you've built."
+                &ldquo;I was driving when a client popped into my head. I sent a voice note to my AI agent, the email went out, the CRM updated — all before I reached the next stoplight. That&apos;s when I knew everything had changed.&rdquo;
               </blockquote>
-              <p className="text-[#52525B] text-sm mt-4 font-semibold">— Mike Walker</p>
+              <p className="text-[#52525B] text-sm mt-4 font-semibold">— Mike Walker, Founder, BrightLink Consulting</p>
             </div>
           </div>
         </AnimatedSection>
