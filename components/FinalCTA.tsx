@@ -7,12 +7,28 @@ export default function FinalCTA() {
   return (
     <AnimatedSection
       id="cta"
-      className="py-24 md:py-36 px-4"
-      style={{
-        background: 'radial-gradient(ellipse at center, rgba(232,96,10,0.08) 0%, transparent 70%)',
-      }}
+      className="relative overflow-hidden py-24 md:py-36 px-4"
     >
-      <div className="max-w-4xl mx-auto text-center">
+      {/* Dual-color breathing glow */}
+      <div className="absolute inset-0 pointer-events-none z-0">
+        <div
+          className="absolute inset-0"
+          style={{
+            background: 'radial-gradient(ellipse 50% 60% at 35% 50%, rgba(232,96,10,0.10) 0%, transparent 70%)',
+            animation: 'cta-glow-orange 14s ease-in-out infinite',
+            willChange: 'transform',
+          }}
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background: 'radial-gradient(ellipse 50% 60% at 65% 50%, rgba(83,74,183,0.08) 0%, transparent 70%)',
+            animation: 'cta-glow-purple 18s ease-in-out infinite',
+            willChange: 'transform',
+          }}
+        />
+      </div>
+      <div className="relative z-[1] max-w-4xl mx-auto text-center">
         <div className="text-sm font-bold uppercase tracking-widest text-brand-orange mb-4">
           THE NEXT STEP
         </div>

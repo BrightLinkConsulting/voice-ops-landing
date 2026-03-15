@@ -38,8 +38,15 @@ export default function Testimonials() {
   ];
 
   return (
-    <AnimatedSection id="testimonials" className="py-24 md:py-36 px-4">
-      <div className="max-w-7xl mx-auto">
+    <AnimatedSection id="testimonials" className="relative py-24 md:py-36 px-4">
+      {/* SVG noise texture overlay */}
+      <svg className="absolute inset-0 w-full h-full pointer-events-none z-0" style={{ opacity: 0.035 }}>
+        <filter id="testimonial-noise">
+          <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch" />
+        </filter>
+        <rect width="100%" height="100%" filter="url(#testimonial-noise)" />
+      </svg>
+      <div className="relative z-[1] max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <div className="text-sm font-bold uppercase tracking-widest text-brand-orange mb-4">
             FROM THE PEOPLE WHO&apos;VE BEEN THROUGH THE BUILD

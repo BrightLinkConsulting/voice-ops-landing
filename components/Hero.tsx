@@ -25,14 +25,14 @@ const itemVariants = {
 export default function Hero() {
   return (
     <section className="relative min-h-screen pt-20 md:pt-32 pb-20 px-4 md:px-8 overflow-hidden">
-      {/* Gradient glow background */}
-      <div className="absolute inset-0 pointer-events-none">
+      {/* Animated radial glow */}
+      <div className="absolute inset-0 pointer-events-none z-0">
         <div
-          className="absolute top-0 right-0 w-96 h-96 rounded-full opacity-20"
+          className="absolute inset-0"
           style={{
-            background:
-              'radial-gradient(circle, rgba(232,96,10,0.4) 0%, transparent 70%)',
-            filter: 'blur(60px)',
+            background: 'radial-gradient(ellipse 60% 40% at 50% 40%, rgba(232,96,10,0.12) 0%, transparent 70%)',
+            animation: 'hero-pulse 12s ease-in-out infinite',
+            willChange: 'transform',
           }}
         />
       </div>
@@ -40,7 +40,7 @@ export default function Hero() {
       {/* Grain overlay */}
       <div className="grain absolute inset-0 pointer-events-none opacity-5" />
 
-      <div className="relative max-w-7xl mx-auto">
+      <div className="relative max-w-7xl mx-auto z-[1]">
         <motion.div
           className="flex flex-col items-center text-center"
           variants={containerVariants}

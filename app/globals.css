@@ -12,8 +12,37 @@ html {
 }
 
 body {
-  background: #0A0A0B;
+  background: linear-gradient(180deg, #0D0A0F 0%, #0A0A0B 30%, #080B0D 60%, #0A0B0F 100%);
+  background-attachment: fixed;
   color: #F4F4F5;
+}
+
+/* ── Dynamic background effects ── */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes hero-pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+  }
+  @keyframes float-0 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(12px,-18px)} }
+  @keyframes float-1 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-15px,22px)} }
+  @keyframes float-2 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(20px,14px)} }
+  @keyframes float-3 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-10px,-25px)} }
+  @keyframes float-4 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(18px,10px)} }
+  @keyframes float-5 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-22px,-12px)} }
+  @keyframes float-6 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(8px,20px)} }
+  @keyframes float-7 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-14px,16px)} }
+  @keyframes sweep {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(200%); }
+  }
+  @keyframes cta-glow-orange {
+    0%,100% { transform: scale(1); opacity: 0.7; }
+    50% { transform: scale(1.12); opacity: 1; }
+  }
+  @keyframes cta-glow-purple {
+    0%,100% { transform: scale(1); opacity: 0.7; }
+    50% { transform: scale(1.1); opacity: 1; }
+  }
 }
 
 /* Grain texture overlay */

@@ -166,8 +166,19 @@ export default function PricingTiers() {
   ];
 
   return (
-    <AnimatedSection id="pricing" className="py-24 md:py-36 px-4">
-      <div className="max-w-7xl mx-auto">
+    <AnimatedSection id="pricing" className="relative overflow-hidden py-24 md:py-36 px-4">
+      {/* Diagonal light sweep — hidden on mobile */}
+      <div
+        className="hidden md:block absolute inset-0 pointer-events-none z-0"
+        style={{
+          width: '60%',
+          height: '100%',
+          background: 'linear-gradient(135deg, transparent 40%, rgba(255,255,255,0.015) 50%, transparent 60%)',
+          animation: 'sweep 20s linear infinite',
+          willChange: 'transform',
+        }}
+      />
+      <div className="relative z-[1] max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <div className="text-sm font-bold uppercase tracking-widest text-brand-orange mb-4">
             CHOOSE YOUR TIER

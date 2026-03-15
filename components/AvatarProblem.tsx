@@ -21,12 +21,42 @@ const AvatarProblem = () => {
     }
   ]
 
+  const particles = [
+    { size: 3, color: 'rgba(232,96,10,0.25)', top: '8%', left: '12%', anim: 'float-0 10s ease-in-out infinite' },
+    { size: 4, color: 'rgba(186,117,23,0.2)', top: '15%', left: '85%', anim: 'float-1 14s ease-in-out infinite' },
+    { size: 2, color: 'rgba(83,74,183,0.2)', top: '35%', left: '6%', anim: 'float-2 12s ease-in-out infinite' },
+    { size: 5, color: 'rgba(232,96,10,0.25)', top: '55%', left: '92%', anim: 'float-3 8s ease-in-out infinite' },
+    { size: 3, color: 'rgba(83,74,183,0.2)', top: '70%', left: '18%', anim: 'float-4 16s ease-in-out infinite' },
+    { size: 4, color: 'rgba(186,117,23,0.2)', top: '25%', left: '50%', anim: 'float-5 18s ease-in-out infinite' },
+    { size: 2, color: 'rgba(232,96,10,0.25)', top: '80%', left: '75%', anim: 'float-6 11s ease-in-out infinite' },
+    { size: 5, color: 'rgba(83,74,183,0.2)', top: '45%', left: '35%', anim: 'float-7 15s ease-in-out infinite' },
+  ]
+
   return (
     <section
       id="avatar"
-      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36"
+      className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36"
     >
-      <div className="flex flex-col items-center text-center mb-16">
+      {/* Floating particles - hidden on mobile */}
+      <div className="hidden md:block">
+        {particles.map((p, i) => (
+          <div
+            key={i}
+            className="absolute rounded-full pointer-events-none"
+            style={{
+              width: p.size,
+              height: p.size,
+              backgroundColor: p.color,
+              top: p.top,
+              left: p.left,
+              animation: p.anim,
+              willChange: 'transform',
+            }}
+          />
+        ))}
+      </div>
+
+      <div className="relative z-[1] flex flex-col items-center text-center mb-16">
         <p className="text-sm tracking-widest text-brand-orange uppercase mb-4">
           THIS IS BUILT FOR SUBJECT MATTER EXPERTS WHO...
         </p>
