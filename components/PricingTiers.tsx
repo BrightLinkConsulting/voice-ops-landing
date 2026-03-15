@@ -185,13 +185,7 @@ export default function PricingTiers() {
                 }`}
               >
                 <div className={tier.popular || tier.elite ? 'pt-4' : ''}>
-                  <h3 className="text-lg font-semibold text-[#F4F4F5] mb-1">{tier.name}</h3>
-
-                  {tier.includesBelow && (
-                    <p className="text-xs text-[#52525B] mb-3">Includes all layers below ↑</p>
-                  )}
-
-                  <p className="text-sm font-normal text-gray-400 mb-4 truncate">{tier.tagline}</p>
+                  <h3 className="text-lg font-semibold text-[#F4F4F5] mb-3">{tier.name}</h3>
 
                   <div className="mb-4 pb-4 border-b border-[#1E1E24]">
                     <div className="flex items-baseline gap-1 mb-2">
@@ -238,15 +232,6 @@ export default function PricingTiers() {
                   {tier.cta}
                 </button>
 
-                {tier.credential && (
-                  <p className={`text-sm text-center mt-3 ${
-                    tier.elite
-                      ? 'font-medium text-[#8B82E0]'
-                      : 'text-gray-300'
-                  }`}>
-                    {tier.credential}
-                  </p>
-                )}
               </div>
             </motion.div>
           ))}
