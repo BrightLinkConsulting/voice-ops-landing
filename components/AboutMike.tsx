@@ -41,13 +41,14 @@ export default function AboutMike() {
             </div>
           </div>
 
-          {/* Photo placeholder - right side */}
+          {/* Photo - right side */}
           <div className="md:col-span-2 order-1 md:order-2">
-            <div className="bg-[#111114] border border-[#1E1E24] rounded-xl aspect-[3/4] w-full max-w-xs mx-auto md:max-w-none flex items-center justify-center text-[#52525B]">
-              {/* Replace with Mike Walker professional photo */}
-              <span className="text-center px-4 text-sm">
-                Mike Walker Professional Headshot
-              </span>
+            <div className="rounded-xl overflow-hidden aspect-[3/4] w-full max-w-xs mx-auto md:max-w-none">
+              <img
+                src="/mike-walker-headshot.png"
+                alt="Mike Walker, Founder and CEO"
+                className="w-full h-full object-cover object-top"
+              />
             </div>
           </div>
         </div>
