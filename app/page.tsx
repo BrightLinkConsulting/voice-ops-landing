@@ -7,7 +7,6 @@ import FourLayerSystem from '@/components/FourLayerSystem'
 import HowItWorks from '@/components/HowItWorks'
 import PricingTiers from '@/components/PricingTiers'
 import ComparisonTable from '@/components/ComparisonTable'
-import Integrations from '@/components/Integrations'
 import Testimonials from '@/components/Testimonials'
 import AboutMike from '@/components/AboutMike'
 import FinalCTA from '@/components/FinalCTA'
@@ -44,8 +43,6 @@ export default function Home() {
       <PricingTiers />
       <SectionDivider />
       <ComparisonTable />
-      <SectionDivider />
-      <Integrations />
       <SectionDivider />
       <Testimonials />
       <SectionDivider />
