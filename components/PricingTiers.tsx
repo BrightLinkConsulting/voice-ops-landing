@@ -3,6 +3,37 @@
 import { Check, X, RefreshCw, Layers, Shield } from 'lucide-react';
 import { AnimatedSection, motion } from '@/components/MotionWrapper';
 
+const glowConfigs = [
+  {
+    border: '#BA7517',
+    bgTint: '#BA751722',
+    glowColor: '#BA751755',
+    glowColorHover: '#BA751788',
+    animation: 'breathe-starter 3s ease-in-out infinite',
+  },
+  {
+    border: '#185FA5',
+    bgTint: '#185FA522',
+    glowColor: '#185FA555',
+    glowColorHover: '#185FA588',
+    animation: 'breathe-signature 3.4s ease-in-out infinite 0.4s',
+  },
+  {
+    border: '#E8600A',
+    bgTint: '#E8600A22',
+    glowColor: '#E8600A66',
+    glowColorHover: '#E8600Aaa',
+    animation: 'breathe-pro 3.8s ease-in-out infinite 0.8s',
+  },
+  {
+    border: '#534AB7',
+    bgTint: '#534AB722',
+    glowColor: '#534AB755',
+    glowColorHover: '#534AB788',
+    animation: 'breathe-proplus 4.2s ease-in-out infinite 1.2s',
+  },
+];
+
 export default function PricingTiers() {
   const tiers = [
     {
@@ -150,7 +181,9 @@ export default function PricingTiers() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 items-stretch">
-          {tiers.map((tier, index) => (
+          {tiers.map((tier, index) => {
+            const glow = glowConfigs[index];
+            return (
             <motion.div
               key={index}
               className={`relative ${tier.mobileOrder}`}
@@ -176,13 +209,14 @@ export default function PricingTiers() {
               )}
 
               <div
-                className={`bg-[#111114] border rounded-2xl p-6 transition-all h-full flex flex-col ${
-                  tier.popular
-                    ? 'border-brand-orange/30 animate-breathe'
-                    : tier.elite
-                      ? 'border-[#534AB7]/30 bg-[#111118]'
-                      : 'border-[#1E1E24] hover:border-brand-orange hover:-translate-y-1 hover:scale-[1.02]'
-                }`}
+                className={`pricing-card pricing-card-${index} rounded-2xl p-6 h-full flex flex-col`}
+                style={{
+                  background: `linear-gradient(135deg, ${glow.bgTint} 0%, #111114 60%)`,
+                  border: `1px solid ${glow.border}44`,
+                  boxShadow: `0 0 20px ${glow.glowColor}, inset 0 0 20px ${glow.bgTint}`,
+                  animation: glow.animation,
+                  transition: 'all 0.3s ease',
+                }}
               >
                 <div className={tier.popular || tier.elite ? 'pt-4' : ''}>
                   <h3 className="text-lg font-semibold text-[#F4F4F5] mb-3">{tier.name}</h3>
@@ -234,7 +268,8 @@ export default function PricingTiers() {
 
               </div>
             </motion.div>
-          ))}
+            );
+          })}
         </div>
 
         {/* How Tiers Work */}
@@ -253,6 +288,44 @@ export default function PricingTiers() {
           })}
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes breathe-starter {
+          0%, 100% { box-shadow: 0 0 15px #BA751733, inset 0 0 15px #BA751711; border-color: #BA751744; }
+          50% { box-shadow: 0 0 25px #BA751755, inset 0 0 25px #BA751722; border-color: #BA751766; }
+        }
+        @keyframes breathe-signature {
+          0%, 100% { box-shadow: 0 0 15px #185FA533, inset 0 0 15px #185FA511; border-color: #185FA544; }
+          50% { box-shadow: 0 0 25px #185FA555, inset 0 0 25px #185FA522; border-color: #185FA566; }
+        }
+        @keyframes breathe-pro {
+          0%, 100% { box-shadow: 0 0 20px #E8600A44, inset 0 0 20px #E8600A18; border-color: #E8600A55; }
+          50% { box-shadow: 0 0 40px #E8600A77, inset 0 0 30px #E8600A30; border-color: #E8600A88; }
+        }
+        @keyframes breathe-proplus {
+          0%, 100% { box-shadow: 0 0 15px #534AB733, inset 0 0 15px #534AB711; border-color: #534AB744; }
+          50% { box-shadow: 0 0 25px #534AB755, inset 0 0 25px #534AB722; border-color: #534AB766; }
+        }
+        .pricing-card:hover {
+          transform: translateY(-4px);
+        }
+        .pricing-card-0:hover {
+          box-shadow: 0 0 35px #BA751788, inset 0 0 30px #BA751733 !important;
+          border-color: #BA7517 !important;
+        }
+        .pricing-card-1:hover {
+          box-shadow: 0 0 35px #185FA588, inset 0 0 30px #185FA533 !important;
+          border-color: #185FA5 !important;
+        }
+        .pricing-card-2:hover {
+          box-shadow: 0 0 50px #E8600Aaa, inset 0 0 35px #E8600A44 !important;
+          border-color: #E8600A !important;
+        }
+        .pricing-card-3:hover {
+          box-shadow: 0 0 35px #534AB788, inset 0 0 30px #534AB733 !important;
+          border-color: #534AB7 !important;
+        }
+      `}</style>
     </AnimatedSection>
   );
 }
