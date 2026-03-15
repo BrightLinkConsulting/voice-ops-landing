@@ -5,20 +5,20 @@ import { AnimatedSection } from '@/components/MotionWrapper';
 
 export default function VSLVideo() {
   return (
-    <section className="w-full py-20 md:py-32 px-4 md:px-8 bg-[#0A0A0B]">
+    <section className="w-full py-24 md:py-36 px-4 md:px-8 bg-[#0A0A0B]">
       <div className="max-w-6xl mx-auto">
         <AnimatedSection>
           <div className="space-y-8 md:space-y-12">
             {/* Eyebrow */}
             <div className="text-center">
-              <p className="text-xs uppercase tracking-[0.2em] text-[#E8600A] font-body">
+              <p className="text-sm uppercase tracking-widest text-[#E8600A] font-body mb-4">
                 THE 3-MINUTE OVERVIEW
               </p>
             </div>
 
             {/* Headline */}
             <div className="text-center">
-              <h2 className="font-display text-3xl md:text-5xl font-bold leading-tight">
+              <h2 className="font-display text-4xl md:text-5xl font-bold leading-tight mb-6">
                 Watch Before You Read Anything Else
               </h2>
             </div>
@@ -37,9 +37,9 @@ export default function VSLVideo() {
             {/* Quote */}
             <div className="text-center">
               <blockquote className="italic text-[#A1A1AA] text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
-                &ldquo;I was driving when a client popped into my head. I sent a voice note to my AI agent, the email went out, the CRM updated — all before I reached the next stoplight. That&apos;s when I knew everything had changed.&rdquo;
+                "The real bottleneck isn't your expertise. It's the administrative work stealing your time and attention. Fix that, and suddenly you have bandwidth to think strategically, close bigger deals, and actually enjoy the business you've built."
               </blockquote>
-              <p className="text-[#52525B] text-sm mt-4 font-semibold">— Mike Walker, Founder, BrightLink Consulting</p>
+              <p className="text-[#52525B] text-sm mt-4 font-semibold">— Mike Walker</p>
             </div>
           </div>
         </AnimatedSection>

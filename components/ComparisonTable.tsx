@@ -33,10 +33,10 @@ export default function ComparisonTable() {
   };
 
   return (
-    <AnimatedSection id="compare" className="py-20 md:py-28 px-4">
+    <AnimatedSection id="compare" className="py-24 md:py-36 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-[#F4F4F5]">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-[#F4F4F5] mb-6">
             How We Compare
           </h2>
         </div>

@@ -29,13 +29,13 @@ const HowItWorks = () => {
   return (
     <section
       id="how-it-works"
-      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32"
+      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36"
     >
       <div className="flex flex-col items-center text-center mb-16">
-        <p className="text-xs tracking-[0.2em] text-brand-orange uppercase mb-4">
+        <p className="text-sm tracking-widest text-brand-orange uppercase mb-4">
           THE INSTALLATION PROCESS
         </p>
-        <h2 className="font-display text-3xl md:text-5xl font-bold">
+        <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
           From Intake Call to Voice-Operated Business in 7-14 Days.
         </h2>
       </div>
@@ -60,7 +60,7 @@ const HowItWorks = () => {
                   <h3 className="text-xl font-semibold text-[#F4F4F5] mt-2">
                     {step.title}
                   </h3>
-                  <p className="text-sm text-[#A1A1AA] mt-2 leading-relaxed">
+                  <p className="text-base text-[#A1A1AA] mt-2 leading-relaxed">
                     {step.body}
                   </p>
                 </div>

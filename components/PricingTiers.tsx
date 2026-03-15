@@ -135,16 +135,16 @@ export default function PricingTiers() {
   ];
 
   return (
-    <AnimatedSection id="pricing" className="py-20 md:py-28 px-4">
+    <AnimatedSection id="pricing" className="py-24 md:py-36 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <div className="text-xs font-bold uppercase tracking-widest text-brand-orange mb-3">
+          <div className="text-sm font-bold uppercase tracking-widest text-brand-orange mb-4">
             CHOOSE YOUR TIER
           </div>
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-[#F4F4F5] mb-4">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-[#F4F4F5] mb-6">
             Start Where You Are.{'\n'}Scale As You Grow.
           </h2>
-          <p className="text-[#A1A1AA] max-w-2xl mx-auto">
+          <p className="text-base leading-relaxed text-[#A1A1AA] max-w-2xl mx-auto">
             Every tier is a monthly subscription. No setup fees. No long-term contracts. If you cancel, your sub-account deactivates. Your system runs as long as your subscription does.
           </p>
         </div>
@@ -195,7 +195,7 @@ export default function PricingTiers() {
 
                   <div className="mb-4 pb-4 border-b border-[#1E1E24]">
                     <div className="flex items-baseline gap-1 mb-2">
-                      <span className="text-3xl font-bold text-[#F4F4F5]">{tier.monthly}</span>
+                      <span className="text-5xl font-bold text-[#F4F4F5]">{tier.monthly}</span>
                       <span className="text-sm text-[#52525B]">/mo</span>
                     </div>
                     <div className="text-xs text-brand-orange">
@@ -208,7 +208,7 @@ export default function PricingTiers() {
                   </p>
 
                   <div className="mb-6">
-                    <ul className="space-y-2">
+                    <ul className="space-y-3">
                       {tier.features.map((feature, fIdx) => (
                         <li key={fIdx} className="flex items-start gap-2">
                           {feature.included ? (
@@ -216,7 +216,7 @@ export default function PricingTiers() {
                           ) : (
                             <X className="w-4 h-4 text-[#52525B] flex-shrink-0 mt-0.5 opacity-40" />
                           )}
-                          <span className={`text-xs ${feature.included ? 'text-[#A1A1AA]' : 'text-[#52525B] opacity-40'}`}>
+                          <span className={`text-sm ${feature.included ? 'text-[#A1A1AA]' : 'text-[#52525B] opacity-40'}`}>
                             {feature.name}
                           </span>
                         </li>
@@ -250,11 +250,11 @@ export default function PricingTiers() {
           {howTiersWork.map((item, idx) => {
             const IconComponent = item.icon;
             return (
-              <div key={idx} className="flex-1 flex items-start gap-3 bg-[#111114] border border-[#1E1E24] rounded-xl p-5">
-                <IconComponent className="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" />
+              <div key={idx} className="flex-1 flex items-start gap-3 bg-[#111114] border border-[#1E1E24] rounded-xl py-12 px-5">
+                <IconComponent className="w-10 h-10 text-brand-orange flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-semibold text-sm text-[#F4F4F5] mb-1">{item.label}</p>
-                  <p className="text-xs text-[#A1A1AA]">{item.description}</p>
+                  <p className="font-semibold text-lg text-[#F4F4F5] mb-1">{item.label}</p>
+                  <p className="text-sm text-[#A1A1AA]">{item.description}</p>
                 </div>
               </div>
             );

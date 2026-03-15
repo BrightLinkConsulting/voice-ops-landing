@@ -38,16 +38,16 @@ export default function Integrations() {
   };
 
   return (
-    <AnimatedSection id="integrations" className="py-20 md:py-28 px-4">
+    <AnimatedSection id="integrations" className="py-24 md:py-36 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <div className="text-xs font-bold uppercase tracking-widest text-brand-orange mb-3">
+          <div className="text-sm font-bold uppercase tracking-widest text-brand-orange mb-4">
             WORKS WITH YOUR EXISTING STACK
           </div>
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-[#F4F4F5] mb-4">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-[#F4F4F5] mb-6">
             Your Tools Stay. The Chaos Goes.
           </h2>
-          <p className="text-[#A1A1AA] max-w-2xl mx-auto">
+          <p className="text-base leading-relaxed text-[#A1A1AA] max-w-2xl mx-auto">
             Voice Ops connects to every platform your business already uses, from communication tools to payment processors. Your existing integrations keep working, but now they're voice-triggered and fully automated.
           </p>
         </div>
@@ -55,7 +55,7 @@ export default function Integrations() {
         {/* Marquee for mobile/tablet, hidden on desktop */}
         <div className="block lg:hidden mb-12">
           <div className="overflow-hidden">
-            <div className="flex gap-4 animate-marquee">
+            <div className="flex gap-4 animate-scroll">
               {[...integrations, ...integrations].map((integration, idx) => (
                 <div
                   key={idx}
@@ -84,7 +84,7 @@ export default function Integrations() {
                 style={{
                   width: `${size}px`,
                   height: `${size}px`,
-                  animation: `orbit ${8 + ringIndex * 6}s linear infinite`,
+                  animation: `orbit-${ringIndex} ${8 + ringIndex * 6}s linear infinite`,
                 }}
               />
             ))}
@@ -106,7 +106,7 @@ export default function Integrations() {
                     <div
                       className="absolute w-full h-full"
                       style={{
-                        animation: `counter-orbit ${8 + ringIndex * 6}s linear infinite`,
+                        animation: `counter-orbit-${ringIndex} ${8 + ringIndex * 6}s linear infinite`,
                       }}
                     >
                       <div
@@ -129,7 +129,7 @@ export default function Integrations() {
 
         {/* Center feature panel */}
         <div className="max-w-3xl mx-auto border border-[#1E1E24] bg-[#111114] rounded-xl p-8 mb-12">
-          <p className="text-[#A1A1AA] mb-6 leading-relaxed">
+          <p className="text-base text-[#A1A1AA] mb-6 leading-relaxed">
             Voice Ops connects to your entire business ecosystem. Every integration point—from GoHighLevel to Slack, Zapier to Stripe—becomes a voice-activated trigger. Your existing tools work harder, your team works smarter, and nothing gets lost in translation.
           </p>
           <div className="space-y-3">
@@ -157,7 +157,74 @@ export default function Integrations() {
         </p>
       </div>
 
-      
+      <style jsx>{`
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+
+        .animate-scroll {
+          animation: scroll 20s linear infinite;
+        }
+
+        @keyframes orbit-0 {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+
+        @keyframes orbit-1 {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+
+        @keyframes orbit-2 {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+
+        @keyframes counter-orbit-0 {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(-360deg);
+          }
+        }
+
+        @keyframes counter-orbit-1 {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(-360deg);
+          }
+        }
+
+        @keyframes counter-orbit-2 {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(-360deg);
+          }
+        }
+      `}</style>
     </AnimatedSection>
   );
 }

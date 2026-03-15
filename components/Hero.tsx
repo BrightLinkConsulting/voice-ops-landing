@@ -50,14 +50,14 @@ export default function Hero() {
           {/* Eyebrow */}
           <motion.div
             variants={itemVariants}
-            className="text-xs uppercase tracking-[0.2em] text-[#E8600A] font-body"
+            className="text-sm uppercase tracking-widest text-[#E8600A] font-body mb-4"
           >
             FOR SUBJECT MATTER EXPERTS READY TO SCALE
           </motion.div>
 
           {/* Headline */}
           <motion.div variants={itemVariants} className="mt-6">
-            <h1 className="font-display text-6xl md:text-8xl font-bold leading-tight">
+            <h1 className="font-display text-7xl md:text-8xl lg:text-9xl font-bold leading-tight">
               <div>Your Business.</div>
               <div>You Command.</div>
               <div className="italic text-[#E8600A]">AI Executes.</div>

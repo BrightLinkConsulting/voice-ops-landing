@@ -67,7 +67,6 @@ const layers: Layer[] = [
       'Getting clients is only half the equation. This tier is designed to help you keep them.',
       'Right now your team is jumping between your CRM, project management tools, spreadsheets, and Slack threads trying to piece together how your clients are actually doing. You\u2019re relying on instinct, reacting after issues surface, and discovering what went wrong after it shows up in the numbers.',
       'ClientBloom changes that. It connects to every tool you already use \u2014 no migrations, no hassles \u2014 and puts an AI-powered client services agent to work across all of them, 24/7. It learns your service model, builds a baseline for every individual client relationship, and tracks patterns across dozens of touchpoints and conversations.',
-      'After 30 days of learning, it knows your clients better than most people on your team do. The morning brief stops being a report. It becomes a briefing from a system that\u2019s been watching while you slept.',
     ],
     bullets: [
       'ClientBloom client intelligence engine \u2014 connected to your full stack',
@@ -93,9 +92,6 @@ const layers: Layer[] = [
       'If you\u2019ve run EOS, implemented Traction, or worked through any business operating framework \u2014 you already understand the value of running your company on a system. Those frameworks are genuinely good. They gave millions of founders structure, rhythm, and a language for making decisions.',
       'But they were built for a pre-AI world. They rely on weekly L10 meetings, manual scorecards, quarterly rocks tracked in spreadsheets, and leadership teams that schedule time to check whether the business is actually healthy. The framework is sound. The execution is slow.',
       'CE.OS is what happens when that operating intelligence gets rebuilt from the ground up on AI.',
-      'Your AIOS now includes a world-class CEO-caliber strategic advisor trained on 20+ years of business development expertise \u2014 one that doesn\u2019t wait for your quarterly review to tell you something needs to change. It monitors you: your energy, your decision patterns, your operating rhythm, and your leadership performance over time.',
-      'While ClientBloom watches your clients, CE.OS watches the person running the company.',
-      'As the rest of the world outsources their thinking to AI, CE.OS is built to do the opposite \u2014 use AI to sharpen yours.',
     ],
     bullets: [
       'CE.OS Chief Executive Operating System \u2014 fully activated',
@@ -119,13 +115,13 @@ const FourLayerSystem = () => {
   return (
     <section
       id="system"
-      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32"
+      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36"
     >
       <div className="flex flex-col items-center text-center mb-16">
-        <p className="text-xs tracking-[0.2em] text-brand-orange uppercase mb-4">
+        <p className="text-sm tracking-widest text-brand-orange uppercase mb-4">
           THE FOUR-LAYER SYSTEM
         </p>
-        <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
+        <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
           One Platform.{'\n'}Four Levels of Power.
         </h2>
         <p className="text-[#A1A1AA] text-base md:text-lg max-w-3xl">
@@ -190,7 +186,7 @@ const FourLayerSystem = () => {
                   </h3>
 
                   {/* Body */}
-                  <div className="text-[#A1A1AA] text-sm md:text-base leading-relaxed mb-6 space-y-3">
+                  <div className="text-[#A1A1AA] text-base leading-relaxed mb-6 space-y-3">
                     {layer.body.map((paragraph, pIdx) => (
                       <p key={pIdx}>{paragraph}</p>
                     ))}

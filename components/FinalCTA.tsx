@@ -7,21 +7,21 @@ export default function FinalCTA() {
   return (
     <AnimatedSection
       id="cta"
-      className="py-20 md:py-28 px-4"
+      className="py-24 md:py-36 px-4"
       style={{
         background: 'radial-gradient(ellipse at center, rgba(232,96,10,0.08) 0%, transparent 70%)',
       }}
     >
       <div className="max-w-4xl mx-auto text-center">
-        <div className="text-xs font-bold uppercase tracking-widest text-brand-orange mb-3">
+        <div className="text-sm font-bold uppercase tracking-widest text-brand-orange mb-4">
           THE NEXT STEP
         </div>
 
-        <h2 className="font-display text-3xl md:text-5xl font-bold text-[#F4F4F5] mb-6">
+        <h2 className="font-display text-4xl md:text-5xl font-bold text-[#F4F4F5] mb-6">
           Ready to Command Your Business?
         </h2>
 
-        <p className="text-[#A1A1AA] leading-relaxed mb-8 max-w-2xl mx-auto">
+        <p className="text-base text-[#A1A1AA] leading-relaxed mb-8 max-w-2xl mx-auto">
           Pick your tier and we&apos;ll have your system installed and running within 14 days. No strategy call required for Starter or Signature — just choose your tier and we&apos;ll reach out to schedule your onboarding. Pro and Pro Plus clients receive a private strategy session before we begin building.
         </p>
 

@@ -7,46 +7,44 @@ const AvatarProblem = () => {
     {
       number: '01',
       title: 'Your message is strong. Your machine is weak.',
-      body: 'You\'ve attracted an audience, but converting them into consistent revenue requires infrastructure you haven\'t had time to build properly. The potential is there. The system to capture it isn\'t.'
+      body: 'You have a clear value proposition and a track record of results. But the systems you\'ve built around yourself haven\'t scaled. You\'re still grinding instead of growing.'
     },
     {
       number: '02',
       title: 'You\'re a CEO acting like a systems admin.',
-      body: 'Every hour spent jumping between dashboards is an hour you\'re not doing the work that only you can do. The platform management should be invisible. Right now it\'s consuming your week.'
+      body: 'You\'ve spent the last 12 months learning Zapier, debugging integrations, and watching leads slip because your stack didn\'t talk to itself. That wasn\'t the job. You hired people for this.'
     },
     {
       number: '03',
       title: 'You\'ve tried the tools. They don\'t stick.',
-      body: 'GoHighLevel, ClickFunnels, Kajabi — you\'ve tested them. The problem was never the platform. It was the absence of a complete, connected system built to your specific business model and run by intelligence that understands it.'
+      body: 'You\'ve gone all-in on platforms before. HubSpot, Monday, Salesforce. Each one promised everything. Each one gathered dust because they demanded more time than they saved.'
     }
   ]
 
   return (
     <section
       id="avatar"
-      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32"
+      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36"
     >
       <div className="flex flex-col items-center text-center mb-16">
-        <p className="text-xs tracking-[0.2em] text-brand-orange uppercase mb-4">
+        <p className="text-sm tracking-widest text-brand-orange uppercase mb-4">
           THIS IS BUILT FOR SUBJECT MATTER EXPERTS WHO...
         </p>
-        <h2 className="font-display text-3xl md:text-5xl font-bold mb-8">
+        <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
           You Have Real Expertise. Your Tech Stack Doesn't Reflect It.
         </h2>
-        <div className="text-[#A1A1AA] text-base md:text-lg leading-relaxed max-w-3xl space-y-4">
-          <p>
-            This system was designed for a very specific kind of business owner: the subject matter expert.
-          </p>
-          <p>
-            You&apos;re a coach, consultant, author, or thought leader with proven IP and real client results. You&apos;ve developed a methodology, a framework, a body of work that genuinely changes people&apos;s businesses or lives.
-          </p>
-          <p>
-            But your online presence is Frankensteined together. A funnel here, an email sequence there, a community on one platform and a CRM that barely talks to it. You&apos;re drowning in tech management instead of delivering your brilliance.
-          </p>
-          <p>
-            And now everyone&apos;s telling you AI is the answer — but every AI tool you try still requires you to figure it all out yourself. That ends here.
-          </p>
-        </div>
+        <p className="text-[#A1A1AA] text-base md:text-lg leading-relaxed max-w-3xl">
+          This system was designed for a very specific kind of business owner: someone with a track
+          record, a clear brand, and a working understanding of what their customers actually want.
+          You're not learning sales. You're not learning your market. You're past that. But somewhere
+          in the last few years, your infrastructure fell behind your own capability. Your message
+          stayed strong. Your machine got weak. And every tool you tried to fix it—Zapier,
+          HubSpot, that platform your VA said was perfect—added complexity instead of solving it.
+          This stack was built for that exact moment. It is not a template. It is not a landing page
+          builder. It is not a CRM for beginners. It is a personal acquisition and automation
+          infrastructure that scales with your own credibility. Everything else stops mattering the
+          moment you turn this on because there is nothing between you and revenue. That ends here.
+        </p>
       </div>
 
       <StaggerContainer>
@@ -60,7 +58,7 @@ const AvatarProblem = () => {
                 <h3 className="text-lg font-semibold text-[#F4F4F5] mt-3">
                   {card.title}
                 </h3>
-                <p className="text-sm text-[#A1A1AA] mt-2 leading-relaxed">
+                <p className="text-base text-[#A1A1AA] mt-2 leading-relaxed">
                   {card.body}
                 </p>
               </div>

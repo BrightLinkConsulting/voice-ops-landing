@@ -38,13 +38,13 @@ export default function Testimonials() {
   ];
 
   return (
-    <AnimatedSection id="testimonials" className="py-20 md:py-28 px-4">
+    <AnimatedSection id="testimonials" className="py-24 md:py-36 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <div className="text-xs font-bold uppercase tracking-widest text-brand-orange mb-3">
+          <div className="text-sm font-bold uppercase tracking-widest text-brand-orange mb-4">
             FROM THE PEOPLE WHO&apos;VE BEEN THROUGH THE BUILD
           </div>
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-[#F4F4F5]">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-[#F4F4F5] mb-6">
             Results Don&apos;t Lie. Neither Do Clients.
           </h2>
         </div>
@@ -62,7 +62,7 @@ export default function Testimonials() {
                       />
                     ))}
                   </div>
-                  <p className="text-sm text-[#A1A1AA] leading-relaxed italic mb-4 flex-grow">
+                  <p className="text-base text-[#A1A1AA] leading-relaxed italic mb-4 flex-grow">
                     &ldquo;{testimonial.quote}&rdquo;
                   </p>
                   <div>

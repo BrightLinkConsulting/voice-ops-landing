@@ -4,9 +4,9 @@ import { AnimatedSection } from '@/components/MotionWrapper';
 
 export default function AboutMike() {
   return (
-    <AnimatedSection id="about" className="py-20 md:py-28 px-4">
+    <AnimatedSection id="about" className="py-24 md:py-36 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="text-xs font-bold uppercase tracking-widest text-brand-orange mb-12">
+        <div className="text-sm font-bold uppercase tracking-widest text-brand-orange mb-12">
           A NOTE FROM MIKE WALKER
         </div>
 
@@ -17,7 +17,7 @@ export default function AboutMike() {
               We Take Your Goals as Seriously as You Do.
             </h2>
 
-            <div className="space-y-4 text-[#A1A1AA] leading-relaxed">
+            <div className="space-y-4 text-base text-[#A1A1AA] leading-relaxed">
               <p>
                 With over two decades building brands, leading launches, and architecting marketing and operational systems, I&apos;ve seen firsthand how difficult it can be to earn and keep the attention of your market — and how much harder it is to scale without the right infrastructure.
               </p>
