@@ -40,7 +40,7 @@ export default function PricingTiers() {
       monthly: '$147',
       annual: '$1,470/yr',
       annualSavings: 'save 2 months',
-      tagline: 'Everything in Starter, plus your voice-command Business Intelligence Agent.',
+      tagline: 'Everything in Starter, plus your voice-command BI Agent.',
       bestFor: 'Founders ready to stop logging into dashboards and start commanding their business by voice.',
       features: [
         { name: 'Everything in Starter', included: true },
@@ -66,7 +66,7 @@ export default function PricingTiers() {
       monthly: '$497',
       annual: '$4,470/yr',
       annualSavings: 'save 2 months',
-      tagline: 'Everything in Signature, plus ClientBloom \u2014 your 24/7 client intelligence engine.',
+      tagline: 'Everything in Signature, plus ClientBloom client intelligence.',
       bestFor: 'Founders with an active client base who need to know which relationships need attention before they go quiet.',
       features: [
         { name: 'Everything in Signature', included: true },
@@ -93,7 +93,7 @@ export default function PricingTiers() {
       monthly: '$997',
       annual: '$9,970/yr',
       annualSavings: 'save 2 months',
-      tagline: 'Everything in Pro, plus CE.OS \u2014 the Chief Executive Operating System.',
+      tagline: 'Everything in Pro, plus CE.OS \u2014 the Chief Executive OS.',
       bestFor: 'Founders who\u2019ve outgrown EOS/Traction and want an AI-driven operating system that runs continuously, not quarterly.',
       features: [
         { name: 'Everything in Pro', included: true },
@@ -149,7 +149,7 @@ export default function PricingTiers() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 items-stretch">
           {tiers.map((tier, index) => (
             <motion.div
               key={index}
@@ -191,7 +191,7 @@ export default function PricingTiers() {
                     <p className="text-xs text-[#52525B] mb-3">Includes all layers below ↑</p>
                   )}
 
-                  <p className="italic text-[#A1A1AA] text-sm mb-4">{tier.tagline}</p>
+                  <p className="text-sm font-normal text-gray-400 mb-4 truncate">{tier.tagline}</p>
 
                   <div className="mb-4 pb-4 border-b border-[#1E1E24]">
                     <div className="flex items-baseline gap-1 mb-2">
@@ -203,20 +203,23 @@ export default function PricingTiers() {
                     </div>
                   </div>
 
-                  <p className="text-xs text-[#52525B] mb-4">
-                    <span className="font-semibold text-[#A1A1AA]">Best for:</span> {tier.bestFor}
-                  </p>
+                  <div className="mb-4 pt-3 mt-3" style={{ borderTop: '1px solid rgba(255,255,255,0.08)' }}>
+                    <p className="text-sm">
+                      <span className="font-semibold text-white">Best for:</span>{' '}
+                      <span className="text-gray-300">{tier.bestFor}</span>
+                    </p>
+                  </div>
 
-                  <div className="mb-6">
-                    <ul className="space-y-3">
+                  <div className="mb-6 flex-grow">
+                    <ul className="space-y-3 min-h-[320px]">
                       {tier.features.map((feature, fIdx) => (
                         <li key={fIdx} className="flex items-start gap-2">
                           {feature.included ? (
                             <Check className="w-4 h-4 text-brand-orange flex-shrink-0 mt-0.5" />
                           ) : (
-                            <X className="w-4 h-4 text-[#52525B] flex-shrink-0 mt-0.5 opacity-40" />
+                            <X className="w-4 h-4 text-[#52525B] flex-shrink-0 mt-0.5 opacity-[0.35]" />
                           )}
-                          <span className={`text-sm ${feature.included ? 'text-[#A1A1AA]' : 'text-[#52525B] opacity-40'}`}>
+                          <span className={`text-sm ${feature.included ? 'text-[#A1A1AA]' : 'text-[#52525B] opacity-[0.35]'}`}>
                             {feature.name}
                           </span>
                         </li>
@@ -236,7 +239,11 @@ export default function PricingTiers() {
                 </button>
 
                 {tier.credential && (
-                  <p className="text-xs text-[#52525B] italic mt-3 text-center">
+                  <p className={`text-sm text-center mt-3 ${
+                    tier.elite
+                      ? 'font-medium text-[#8B82E0]'
+                      : 'text-gray-300'
+                  }`}>
                     {tier.credential}
                   </p>
                 )}
