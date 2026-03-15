@@ -45,7 +45,7 @@ export default function AboutMike() {
           <div className="md:col-span-2 order-1 md:order-2">
             <div className="rounded-xl overflow-hidden aspect-[3/4] w-full max-w-xs mx-auto md:max-w-none">
               <img
-                src="/mike-walker-headshot.jpg"
+                src="/Studio-3.png"
                 alt="Mike Walker, Founder and CEO"
                 className="w-full h-full object-cover object-top"
               />
