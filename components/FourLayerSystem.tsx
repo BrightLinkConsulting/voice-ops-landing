@@ -115,7 +115,7 @@ const FourLayerSystem = () => {
   return (
     <section
       id="system"
-      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36"
+      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 md:py-40"
     >
       <div className="flex flex-col items-center text-center mb-16">
         <p className="text-sm tracking-widest text-brand-orange uppercase mb-4">
