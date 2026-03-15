@@ -203,12 +203,11 @@ export default function Hero() {
             {/* Headline */}
             <motion.div variants={itemVariants} className="space-y-2">
               <h1 className="font-display text-5xl md:text-7xl font-bold leading-tight">
-                <div>You Have the IP.</div>
-                <div>Now Give It a</div>
-                <div>Business That</div>
                 <div>
-                  <span className="italic text-[#E8600A]">Runs Itself.</span>
+                  <span className="italic text-[#E8600A]">You Have the Expertise.</span>
                 </div>
+                <div>Now Command the</div>
+                <div>Business Around It.</div>
               </h1>
             </motion.div>
 

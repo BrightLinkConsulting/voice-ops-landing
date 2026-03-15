@@ -13,7 +13,7 @@ export default function AboutMike() {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12 items-start">
           {/* Content - left side, wider */}
           <div className="md:col-span-3 order-2 md:order-1">
-            <h2 className="font-display text-3xl md:text-5xl font-bold text-[#F4F4F5] mb-6">
+            <h2 className="font-display text-3xl md:text-[2.65rem] lg:text-5xl font-bold text-[#F4F4F5] mb-6 leading-tight">
               We Take Your Goals as Seriously as You Do.
             </h2>
 
