@@ -131,9 +131,59 @@ const FourLayerSystem = () => {
 
       {/* Orbital Rings */}
       <OrbitalRings />
-      <p className="text-sm text-gray-500 text-center mb-12 mt-2">
+      <p className="text-sm text-gray-500 text-center mb-16 mt-2">
         Hover each layer to see how your system expands.
       </p>
+
+      {/* Product Screenshots */}
+      <div className="mb-20">
+        <div className="flex flex-col items-center text-center mb-10">
+          <p className="text-sm tracking-widest text-brand-orange uppercase mb-4">
+            WHAT IT LOOKS LIKE IN PRACTICE
+          </p>
+          <h3 className="font-display text-3xl md:text-4xl font-bold">
+            Real Commands. Real Results.
+          </h3>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {[
+            {
+              label: '[ Telegram · Voice Command Interface ]',
+              caption: 'Send emails, update CRM, query your pipeline — all by voice from your phone.',
+              path: '/screenshots/telegram.png',
+            },
+            {
+              label: '[ GoHighLevel · Funnels Dashboard ]',
+              caption: 'Four complete funnel types installed, branded, and live inside your GHL sub-account.',
+              path: '/screenshots/ghl.png',
+            },
+            {
+              label: '[ AIOS · Morning CEO Brief ]',
+              caption: 'Your daily briefing arrives in Telegram before your workday starts. No dashboard required.',
+              path: '/screenshots/brief.png',
+            },
+          ].map((card, idx) => (
+            <div
+              key={idx}
+              className="bg-[#111114] border border-[#1E1E24] rounded-xl p-4"
+            >
+              <div className="aspect-video bg-[#0A0A0B] rounded-lg flex items-center justify-center mb-3">
+                <span className="text-xs text-[#52525B] font-mono text-center px-4">
+                  {card.label}
+                </span>
+              </div>
+              <p className="text-sm text-[#A1A1AA] leading-relaxed">
+                {card.caption}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <p className="text-xs text-[#52525B] text-center mt-6">
+          Screenshots shown after installation. Replace placeholder images with actual product screenshots using the image paths /screenshots/telegram.png, /screenshots/ghl.png, /screenshots/brief.png
+        </p>
+      </div>
 
       {/* Layer Cards */}
       <div className="relative">

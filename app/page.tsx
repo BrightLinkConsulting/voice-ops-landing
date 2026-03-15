@@ -3,11 +3,13 @@ import Navigation from '@/components/Navigation'
 import Hero from '@/components/Hero'
 import VSLVideo from '@/components/VSLVideo'
 import AvatarProblem from '@/components/AvatarProblem'
+import PowerQuote from '@/components/PowerQuote'
 import FourLayerSystem from '@/components/FourLayerSystem'
-import HowItWorks from '@/components/HowItWorks'
-import PricingTiers from '@/components/PricingTiers'
-import ComparisonTable from '@/components/ComparisonTable'
 import WhatItReplaces from '@/components/WhatItReplaces'
+import PricingTiers from '@/components/PricingTiers'
+import HowItWorks from '@/components/HowItWorks'
+import OnboardingReassurance from '@/components/OnboardingReassurance'
+import ComparisonTable from '@/components/ComparisonTable'
 import Testimonials from '@/components/Testimonials'
 import AboutMike from '@/components/AboutMike'
 import FinalCTA from '@/components/FinalCTA'
@@ -37,15 +39,18 @@ export default function Home() {
       <SectionDivider />
       <AvatarProblem />
       <SectionDivider />
+      <PowerQuote />
+      <SectionDivider />
       <FourLayerSystem />
       <SectionDivider />
-      <HowItWorks />
+      <WhatItReplaces />
       <SectionDivider />
       <PricingTiers />
       <SectionDivider />
-      <ComparisonTable />
+      <HowItWorks />
+      <OnboardingReassurance />
       <SectionDivider />
-      <WhatItReplaces />
+      <ComparisonTable />
       <SectionDivider />
       <Testimonials />
       <SectionDivider />
