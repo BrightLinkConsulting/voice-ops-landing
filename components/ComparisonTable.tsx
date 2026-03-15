@@ -5,20 +5,21 @@ import { AnimatedSection } from '@/components/MotionWrapper';
 
 export default function ComparisonTable() {
   const features = [
-    { name: 'GHL Platform', diy: '✓ Self-setup', launch: '✓ Built for you', pro: '✓ Built for you' },
-    { name: 'Funnel Templates', diy: 'Templates only', launch: '✓ Installed + live', pro: '✓ Installed + live' },
-    { name: 'Done-for-you build', diy: false, launch: true, pro: true },
-    { name: 'Community infrastructure', diy: false, launch: true, pro: true },
-    { name: 'Voice command interface', diy: false, launch: true, pro: true },
-    { name: 'CRM commands by voice', diy: false, launch: true, pro: true },
-    { name: 'Daily AI business brief', diy: false, launch: false, pro: true },
-    { name: 'Client retention scoring', diy: false, launch: false, pro: true },
-    { name: 'Proactive churn detection', diy: false, launch: false, pro: true },
-    { name: 'Pipeline health alerts', diy: false, launch: false, pro: true },
-    { name: 'Quarterly strategy audit', diy: false, launch: false, pro: true },
-    { name: 'Monthly cost', diy: '$97–$197', launch: '$197', pro: '$497' },
-    { name: 'Setup investment', diy: '$0', launch: '$1,997', pro: '$4,997' },
+    { name: 'Done-for-you GHL build', diy: false, starter: true, signature: true, pro: true, proPlus: true },
+    { name: 'All 4 funnel types installed', diy: false, starter: true, signature: true, pro: true, proPlus: true },
+    { name: 'Community infrastructure', diy: false, starter: true, signature: true, pro: true, proPlus: true },
+    { name: 'Business Intelligence Agent', diy: false, starter: false, signature: true, pro: true, proPlus: true },
+    { name: 'Voice command interface', diy: false, starter: false, signature: true, pro: true, proPlus: true },
+    { name: 'Daily morning brief', diy: false, starter: false, signature: true, pro: true, proPlus: true },
+    { name: 'ClientBloom intelligence', diy: false, starter: false, signature: false, pro: true, proPlus: true },
+    { name: 'Client retention scoring (CRS)', diy: false, starter: false, signature: false, pro: true, proPlus: true },
+    { name: 'Proactive churn detection', diy: false, starter: false, signature: false, pro: true, proPlus: true },
+    { name: 'CE.OS operating system', diy: false, starter: false, signature: false, pro: false, proPlus: true },
+    { name: 'OPI performance scoring', diy: false, starter: false, signature: false, pro: false, proPlus: true },
+    { name: 'CE.OS community access', diy: false, starter: false, signature: false, pro: false, proPlus: true },
   ];
+
+  const pricing = { name: 'Monthly', diy: 'DIY', starter: '$97', signature: '$147', pro: '$497', proPlus: '$997' };
 
   const renderCell = (value: boolean | string) => {
     if (typeof value === 'boolean') {
@@ -42,25 +43,31 @@ export default function ComparisonTable() {
 
         <div className="block md:hidden mb-4">
           <p className="text-sm text-[#52525B] text-center">
-            ← Scroll to compare →
+            ← Scroll to compare all 4 tiers →
           </p>
         </div>
 
         <div className="overflow-x-auto -mx-4 px-4">
-          <table className="w-full border-collapse">
+          <table className="w-full border-collapse min-w-[700px]">
             <thead>
               <tr className="border-b border-[#1E1E24]">
                 <th className="sticky left-0 bg-[#0A0A0B] z-10 text-left py-4 px-4 text-xs uppercase tracking-wider text-[#52525B] font-semibold">
                   Feature
                 </th>
-                <th className="text-center py-4 px-4 text-xs uppercase tracking-wider text-[#52525B] font-semibold min-w-[140px]">
+                <th className="text-center py-4 px-3 text-xs uppercase tracking-wider text-[#52525B] font-semibold min-w-[100px]">
                   DIY / GHL Alone
                 </th>
-                <th className="text-center py-4 px-4 text-xs uppercase tracking-wider text-[#52525B] font-semibold min-w-[140px]">
-                  Voice Ops Launch
+                <th className="text-center py-4 px-3 text-xs uppercase tracking-wider text-[#52525B] font-semibold min-w-[100px]">
+                  Starter
                 </th>
-                <th className="text-center py-4 px-4 text-xs uppercase tracking-wider text-brand-orange font-semibold min-w-[140px]">
-                  Voice Ops Pro
+                <th className="text-center py-4 px-3 text-xs uppercase tracking-wider text-[#52525B] font-semibold min-w-[100px]">
+                  Signature
+                </th>
+                <th className="text-center py-4 px-3 text-xs uppercase tracking-wider text-brand-orange font-semibold min-w-[100px]">
+                  Pro
+                </th>
+                <th className="text-center py-4 px-3 text-xs uppercase tracking-wider font-semibold min-w-[100px]" style={{ color: '#8B82E0' }}>
+                  Pro Plus
                 </th>
               </tr>
             </thead>
@@ -73,11 +80,24 @@ export default function ComparisonTable() {
                   <td className="sticky left-0 bg-inherit z-10 text-left py-4 px-4 text-sm font-medium text-[#A1A1AA]">
                     {feature.name}
                   </td>
-                  <td className="text-center py-4 px-4">{renderCell(feature.diy)}</td>
-                  <td className="text-center py-4 px-4">{renderCell(feature.launch)}</td>
-                  <td className="text-center py-4 px-4">{renderCell(feature.pro)}</td>
+                  <td className="text-center py-4 px-3">{renderCell(feature.diy)}</td>
+                  <td className="text-center py-4 px-3">{renderCell(feature.starter)}</td>
+                  <td className="text-center py-4 px-3">{renderCell(feature.signature)}</td>
+                  <td className="text-center py-4 px-3">{renderCell(feature.pro)}</td>
+                  <td className="text-center py-4 px-3">{renderCell(feature.proPlus)}</td>
                 </tr>
               ))}
+              {/* Pricing row */}
+              <tr className="border-b border-[#1E1E24] bg-[#111114]">
+                <td className="sticky left-0 bg-inherit z-10 text-left py-4 px-4 text-sm font-semibold text-[#F4F4F5]">
+                  {pricing.name}
+                </td>
+                <td className="text-center py-4 px-3"><span className="text-sm text-[#A1A1AA]">{pricing.diy}</span></td>
+                <td className="text-center py-4 px-3"><span className="text-sm text-[#A1A1AA]">{pricing.starter}</span></td>
+                <td className="text-center py-4 px-3"><span className="text-sm text-[#A1A1AA]">{pricing.signature}</span></td>
+                <td className="text-center py-4 px-3"><span className="text-sm font-semibold text-brand-orange">{pricing.pro}</span></td>
+                <td className="text-center py-4 px-3"><span className="text-sm font-semibold" style={{ color: '#8B82E0' }}>{pricing.proPlus}</span></td>
+              </tr>
             </tbody>
           </table>
         </div>

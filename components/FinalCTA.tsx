@@ -18,11 +18,11 @@ export default function FinalCTA() {
         </div>
 
         <h2 className="font-display text-3xl md:text-5xl font-bold text-[#F4F4F5] mb-6">
-          This Isn't a Pitch. It's a Mutual Evaluation.
+          Ready to Command Your Business?
         </h2>
 
         <p className="text-[#A1A1AA] leading-relaxed mb-8 max-w-2xl mx-auto">
-          We only work with founders and operators who are ready to think differently about operations. If you're content with your current systems and chaos level, this isn't for you. If you're serious about scaling without hiring 10 more people, let's talk.
+          Pick your tier and we&apos;ll have your system installed and running within 14 days. No strategy call required for Starter or Signature — just choose your tier and we&apos;ll reach out to schedule your onboarding. Pro and Pro Plus clients receive a private strategy session before we begin building.
         </p>
 
         <p className="text-[#A1A1AA] font-semibold mb-8">On the strategy call, we'll either:</p>

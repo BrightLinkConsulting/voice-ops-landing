@@ -42,10 +42,10 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <div className="text-xs font-bold uppercase tracking-widest text-brand-orange mb-3">
-            FROM THE PEOPLE WHO'VE BEEN THROUGH THE BUILD
+            FROM THE PEOPLE WHO&apos;VE BEEN THROUGH THE BUILD
           </div>
           <h2 className="font-display text-3xl md:text-5xl font-bold text-[#F4F4F5]">
-            Results Don't Lie. Neither Do Clients.
+            Results Don&apos;t Lie. Neither Do Clients.
           </h2>
         </div>
 
@@ -63,7 +63,7 @@ export default function Testimonials() {
                     ))}
                   </div>
                   <p className="text-sm text-[#A1A1AA] leading-relaxed italic mb-4 flex-grow">
-                    "{testimonial.quote}"
+                    &ldquo;{testimonial.quote}&rdquo;
                   </p>
                   <div>
                     <p className="font-semibold text-sm text-[#F4F4F5]">
