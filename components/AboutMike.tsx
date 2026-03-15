@@ -13,7 +13,7 @@ export default function AboutMike() {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12 items-start">
           {/* Content - left side, wider */}
           <div className="md:col-span-3 order-2 md:order-1">
-            <h2 className="font-display text-3xl md:text-[2.65rem] lg:text-5xl font-bold text-[#F4F4F5] mb-6 leading-tight">
+            <h2 className="font-display text-3xl md:text-4xl xl:text-5xl font-bold text-[#F4F4F5] mb-6 leading-tight">
               We Take Your Goals as Seriously as You Do.
             </h2>
 
@@ -45,7 +45,7 @@ export default function AboutMike() {
           <div className="md:col-span-2 order-1 md:order-2">
             <div className="rounded-xl overflow-hidden aspect-[3/4] w-full max-w-xs mx-auto md:max-w-none">
               <img
-                src="/mike-walker-headshot.png"
+                src="/mike-walker-headshot.jpg"
                 alt="Mike Walker, Founder and CEO"
                 className="w-full h-full object-cover object-top"
               />
