@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic'
 import Navigation from '@/components/Navigation'
-import Hero from '@/components/Hero'
+import { BrightLinkHero } from '@/app/components/BrightLinkHero'
 import VSLVideo from '@/components/VSLVideo'
 import AvatarProblem from '@/components/AvatarProblem'
 import PowerQuote from '@/components/PowerQuote'
@@ -33,7 +33,7 @@ export default function Home() {
       <div className="grain-overlay" aria-hidden="true" />
 
       <Navigation />
-      <Hero />
+      <BrightLinkHero />
       <SectionDivider />
       <VSLVideo />
       <SectionDivider />
