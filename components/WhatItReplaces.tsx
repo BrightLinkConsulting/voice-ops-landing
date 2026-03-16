@@ -19,13 +19,13 @@ const rows = [
 
 export default function WhatItReplaces() {
   return (
-    <AnimatedSection id="replaces" className="py-24 md:py-36 px-4">
+    <AnimatedSection id="replaces" className="py-20 md:py-28 lg:py-40 px-4">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <div className="text-sm font-bold uppercase tracking-widest text-brand-orange mb-4">
             THE MATH IS SIMPLE
           </div>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-[#F4F4F5] mb-6">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-[#F4F4F5] mb-5 md:mb-6 mt-3 md:mt-4">
             Replace a Patchwork Stack with One<br />
             Connected Operating Environment.
           </h2>
@@ -119,7 +119,7 @@ export default function WhatItReplaces() {
         <div className="flex justify-center mt-12">
           <a
             href="#pricing"
-            className="px-8 py-4 bg-[#E8600A] text-white rounded-lg font-semibold hover:bg-[#d4570a] transition-all duration-200 hover:shadow-[0_0_30px_rgba(232,96,10,0.4)]"
+            className="w-full sm:w-auto py-4 md:py-5 px-8 md:px-10 text-sm md:text-base font-semibold tracking-wide bg-[#E8600A] text-white rounded-lg hover:bg-[#d4570a] transition-all duration-200 hover:shadow-[0_0_30px_rgba(232,96,10,0.4)]"
           >
             See Which Layer Fits Your Stage &rarr;
           </a>

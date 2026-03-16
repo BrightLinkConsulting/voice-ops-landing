@@ -1,6 +1,5 @@
 'use client';
 
-import { Check, X } from 'lucide-react';
 import { AnimatedSection } from '@/components/MotionWrapper';
 
 export default function ComparisonTable() {
@@ -24,49 +23,49 @@ export default function ComparisonTable() {
   const renderCell = (value: boolean | string) => {
     if (typeof value === 'boolean') {
       return value ? (
-        <Check className="w-5 h-5 text-[#22C55E] mx-auto" />
+        <span className="text-base md:text-lg text-brand-orange font-bold">&#10003;</span>
       ) : (
-        <X className="w-5 h-5 text-[#52525B] mx-auto" />
+        <span className="text-base md:text-lg text-gray-600">&#10007;</span>
       );
     }
     return <span className="text-sm text-[#A1A1AA]">{value}</span>;
   };
 
   return (
-    <AnimatedSection id="compare" className="py-24 md:py-36 px-4">
+    <AnimatedSection id="compare" className="py-20 md:py-28 lg:py-40 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-[#F4F4F5] mb-6">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-[#F4F4F5] mb-5 md:mb-6">
             How the Layers Stack Up
           </h2>
         </div>
 
         <div className="block md:hidden mb-4">
           <p className="text-sm text-[#52525B] text-center">
-            ← Scroll to compare all 4 tiers →
+            &larr; Scroll to compare all 4 tiers &rarr;
           </p>
         </div>
 
-        <div className="overflow-x-auto -mx-4 px-4">
+        <div className="relative overflow-x-auto -mx-4 px-4">
           <table className="w-full border-collapse min-w-[700px]">
             <thead>
               <tr className="border-b border-[#1E1E24]">
-                <th className="sticky left-0 bg-[#0A0A0B] z-10 text-left py-4 px-4 text-xs uppercase tracking-wider text-[#52525B] font-semibold">
+                <th className="sticky left-0 bg-[#0A0A0B] z-10 text-left py-3 md:py-4 px-4 text-xs md:text-sm font-medium uppercase tracking-wide text-gray-300 min-w-[140px]">
                   Feature
                 </th>
-                <th className="text-center py-4 px-3 text-xs uppercase tracking-wider text-[#52525B] font-semibold min-w-[100px]">
+                <th className="text-center py-3 md:py-4 px-3 text-xs uppercase tracking-wider text-[#52525B] font-semibold min-w-[90px]">
                   DIY / GHL Alone
                 </th>
-                <th className="text-center py-4 px-3 text-xs uppercase tracking-wider text-[#52525B] font-semibold min-w-[100px]">
+                <th className="text-center py-3 md:py-4 px-3 text-xs uppercase tracking-wider text-[#52525B] font-semibold min-w-[90px]">
                   Starter
                 </th>
-                <th className="text-center py-4 px-3 text-xs uppercase tracking-wider text-[#52525B] font-semibold min-w-[100px]">
+                <th className="text-center py-3 md:py-4 px-3 text-xs uppercase tracking-wider text-[#52525B] font-semibold min-w-[90px]">
                   Signature
                 </th>
-                <th className="text-center py-4 px-3 text-xs uppercase tracking-wider text-brand-orange font-semibold min-w-[100px]">
+                <th className="text-center py-3 md:py-4 px-3 text-xs uppercase tracking-wider text-brand-orange font-semibold min-w-[90px]">
                   Pro
                 </th>
-                <th className="text-center py-4 px-3 text-xs uppercase tracking-wider font-semibold min-w-[100px]" style={{ color: '#8B82E0' }}>
+                <th className="text-center py-3 md:py-4 px-3 text-xs uppercase tracking-wider font-semibold min-w-[90px]" style={{ color: '#8B82E0' }}>
                   Pro Plus
                 </th>
               </tr>
@@ -77,26 +76,26 @@ export default function ComparisonTable() {
                   key={idx}
                   className={`border-b border-[#1E1E24] ${idx % 2 === 0 ? 'bg-[#111114]' : 'bg-transparent'}`}
                 >
-                  <td className="sticky left-0 bg-inherit z-10 text-left py-4 px-4 text-sm font-medium text-[#A1A1AA]">
+                  <td className="sticky left-0 z-10 text-left py-3 md:py-4 px-4 text-xs md:text-sm font-medium uppercase tracking-wide text-gray-300 min-w-[140px]" style={{ backgroundColor: idx % 2 === 0 ? '#111114' : '#0A0A0B' }}>
                     {feature.name}
                   </td>
-                  <td className="text-center py-4 px-3">{renderCell(feature.diy)}</td>
-                  <td className="text-center py-4 px-3">{renderCell(feature.starter)}</td>
-                  <td className="text-center py-4 px-3">{renderCell(feature.signature)}</td>
-                  <td className="text-center py-4 px-3">{renderCell(feature.pro)}</td>
-                  <td className="text-center py-4 px-3">{renderCell(feature.proPlus)}</td>
+                  <td className="text-center py-3 md:py-4 px-3 min-w-[90px]">{renderCell(feature.diy)}</td>
+                  <td className="text-center py-3 md:py-4 px-3 min-w-[90px]">{renderCell(feature.starter)}</td>
+                  <td className="text-center py-3 md:py-4 px-3 min-w-[90px]">{renderCell(feature.signature)}</td>
+                  <td className="text-center py-3 md:py-4 px-3 min-w-[90px]">{renderCell(feature.pro)}</td>
+                  <td className="text-center py-3 md:py-4 px-3 min-w-[90px]">{renderCell(feature.proPlus)}</td>
                 </tr>
               ))}
               {/* Pricing row */}
               <tr className="border-b border-[#1E1E24] bg-[#111114]">
-                <td className="sticky left-0 bg-inherit z-10 text-left py-4 px-4 text-sm font-semibold text-[#F4F4F5]">
+                <td className="sticky left-0 z-10 text-left py-3 md:py-4 px-4 text-xs md:text-sm font-semibold uppercase tracking-wide text-[#F4F4F5] min-w-[140px]" style={{ backgroundColor: '#111114' }}>
                   {pricing.name}
                 </td>
-                <td className="text-center py-4 px-3"><span className="text-sm text-[#A1A1AA]">{pricing.diy}</span></td>
-                <td className="text-center py-4 px-3"><span className="text-sm text-[#A1A1AA]">{pricing.starter}</span></td>
-                <td className="text-center py-4 px-3"><span className="text-sm text-[#A1A1AA]">{pricing.signature}</span></td>
-                <td className="text-center py-4 px-3"><span className="text-sm font-semibold text-brand-orange">{pricing.pro}</span></td>
-                <td className="text-center py-4 px-3"><span className="text-sm font-semibold" style={{ color: '#8B82E0' }}>{pricing.proPlus}</span></td>
+                <td className="text-center py-3 md:py-4 px-3 min-w-[90px]"><span className="text-sm text-[#A1A1AA]">{pricing.diy}</span></td>
+                <td className="text-center py-3 md:py-4 px-3 min-w-[90px]"><span className="text-sm text-[#A1A1AA]">{pricing.starter}</span></td>
+                <td className="text-center py-3 md:py-4 px-3 min-w-[90px]"><span className="text-sm text-[#A1A1AA]">{pricing.signature}</span></td>
+                <td className="text-center py-3 md:py-4 px-3 min-w-[90px]"><span className="text-sm font-semibold text-brand-orange">{pricing.pro}</span></td>
+                <td className="text-center py-3 md:py-4 px-3 min-w-[90px]"><span className="text-sm font-semibold" style={{ color: '#8B82E0' }}>{pricing.proPlus}</span></td>
               </tr>
             </tbody>
           </table>

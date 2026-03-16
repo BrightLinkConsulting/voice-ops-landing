@@ -38,7 +38,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <AnimatedSection id="testimonials" className="relative py-24 md:py-36 px-4">
+    <AnimatedSection id="testimonials" className="relative py-20 md:py-28 lg:py-40 px-4">
       {/* SVG noise texture overlay */}
       <svg className="absolute inset-0 w-full h-full pointer-events-none z-0" style={{ opacity: 0.035 }}>
         <filter id="testimonial-noise">
@@ -51,16 +51,16 @@ export default function Testimonials() {
           <div className="text-sm font-bold uppercase tracking-widest text-brand-orange mb-4">
             FROM THE PEOPLE WHO&apos;VE BEEN THROUGH THE BUILD
           </div>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-[#F4F4F5] mb-6">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-[#F4F4F5] mb-5 md:mb-6 mt-3 md:mt-4">
             Real Operators. Real Results.
           </h2>
         </div>
 
         <StaggerContainer>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
             {testimonials.map((testimonial, index) => (
               <StaggerChild key={index}>
-                <div className="bg-[#111114] border border-[#1E1E24] rounded-xl p-6 hover:-translate-y-1 transition-all h-full flex flex-col">
+                <div className="bg-[#111114] border border-[#1E1E24] rounded-xl p-5 md:p-6 hover:-translate-y-1 transition-all h-full flex flex-col">
                   <div className="flex gap-1 mb-4">
                     {[...Array(5)].map((_, i) => (
                       <Star

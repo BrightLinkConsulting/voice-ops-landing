@@ -4,13 +4,13 @@ import { AnimatedSection } from '@/components/MotionWrapper';
 
 export default function AboutMike() {
   return (
-    <AnimatedSection id="about" className="py-24 md:py-36 px-4">
+    <AnimatedSection id="about" className="py-20 md:py-28 lg:py-40 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-sm font-bold uppercase tracking-widest text-brand-orange mb-12">
           A NOTE FROM MIKE WALKER
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-12 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-6 lg:gap-12 items-start">
           {/* Content - left side, wider */}
           <div className="md:col-span-3 order-2 md:order-1">
             <h2 className="font-display text-3xl md:text-4xl xl:text-5xl font-bold text-[#F4F4F5] mb-6 leading-tight">

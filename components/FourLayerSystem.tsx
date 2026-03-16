@@ -1,6 +1,5 @@
 'use client'
 
-import { Check } from 'lucide-react'
 import { StaggerChild, motion } from '@/components/MotionWrapper'
 import OrbitalRings from '@/app/components/OrbitalRings'
 import TerminalChat from '@/components/TerminalChat'
@@ -25,7 +24,6 @@ const layers: Layer[] = [
     headline: 'Installed Infrastructure. Done for You.',
     body: [
       'We install the core infrastructure first \u2014 funnels, automation, CRM architecture, follow-up systems, and the operating backend your business should have had all along.',
-      'Four complete funnel types built inside your GoHighLevel sub-account. Email and SMS automations pre-loaded. Community infrastructure fully configured. This is not a template you fill in. It is a finished, running system handed to you on day one.',
     ],
     bullets: [
       'Lead Magnet Funnel + automation sequence',
@@ -33,7 +31,7 @@ const layers: Layer[] = [
       'VSL + Call Booking Funnel',
       'Flagship Offer Page',
       'Free + Paid Community Groups',
-      'Products and Courses Infrastructure',
+      'Products and Courses infrastructure',
     ],
     whoFor:
       'You have the expertise and the audience but your acquisition infrastructure is fragmented and founder-dependent. You need a complete, professional operating backend installed \u2014 not another platform to configure yourself.',
@@ -46,15 +44,13 @@ const layers: Layer[] = [
     headline: 'AIOS: Your Business Intelligence Layer.',
     body: [
       'AIOS gives you a live operating interface into your business through Telegram, briefings, queries, and guided action.',
-      'Instead of hunting through dashboards, you ask better questions, get clearer answers, and move faster. You can send a voice note and have AIOS execute across your CRM, update client records, surface pipeline status, or trigger follow-up sequences \u2014 all without opening a dashboard.',
-      'Voice is one interface. The real value is intelligence, visibility, and execution speed.',
     ],
     bullets: [
-      'Dedicated AIOS Business Intelligence Agent (via Telegram)',
-      'Conversational interface into your business data and workflows',
-      'Pipeline queries, deal status, and CRM actions on demand',
-      'Voice and text commands executed across your tech stack',
-      'Daily operating brief \u2014 what needs attention, delivered before you ask',
+      'Dedicated AIOS BI Agent via Telegram',
+      'Conversational interface into business data',
+      'Pipeline queries and CRM actions on demand',
+      'Voice and text commands across your full stack',
+      'Daily operating brief, delivered before you ask',
     ],
     whoFor:
       'You have the infrastructure. Now you want the intelligence layer that connects it, interprets it, and lets you operate from context instead of from dashboards.',
@@ -66,18 +62,15 @@ const layers: Layer[] = [
     badgeColor: '#1DBF96',
     headline: 'ClientBloom: Revenue Protection Through Client Intelligence.',
     body: [
-      'Getting clients is expensive. Keeping the right ones is where your margin lives.',
-      'ClientBloom gives the system visibility into fulfillment, engagement, risk signals, and client health \u2014 so you are not managing retention by instinct, scattered notes, or delayed feedback.',
-      'It connects to every tool you already use \u2014 no migrations, no hassles \u2014 and builds an individual behavioral baseline for every client relationship. When a client\u2019s engagement deviates from their normal pattern, you find out before they go quiet.',
-      'The morning brief stops being a report. It becomes a client health briefing from a system that has been watching while you slept.',
+      'Getting clients is expensive. Keeping the right ones is where your margin lives. ClientBloom gives the system visibility into fulfillment, engagement, risk signals, and client health.',
     ],
     bullets: [
-      'ClientBloom client intelligence engine \u2014 embedded in your operating environment',
-      'Individual Client Retention Score (CRS) per client, updating continuously',
-      'Behavioral baseline scoring \u2014 healthy looks different for every account',
-      'Proactive churn risk detection before clients disengage',
-      'Engagement pattern monitoring across calls, billing, messages, and tasks',
-      'Morning brief upgraded with specific client actions by name, priority, and urgency',
+      'ClientBloom intelligence engine embedded',
+      'Client Retention Score (CRS) \u2014 updates continuously',
+      'Behavioral baseline scoring per account',
+      'Proactive churn risk detection',
+      'Engagement pattern monitoring across all touchpoints',
+      'Morning brief upgraded with client health actions',
     ],
     whoFor:
       'You have an active client base and retention directly affects your revenue. You want to stop managing relationships by instinct and start operating from real intelligence on what is actually happening inside each account.',
@@ -91,22 +84,18 @@ const layers: Layer[] = [
     badgeColor: '#8B82E0',
     headline: 'CE.OS: The Executive Layer for Founders Who Have Outgrown Manual Operating Systems.',
     body: [
-      'CE.OS brings executive rhythm, decision support, reflection, accountability, and strategic guidance into the operating environment. It bridges what is happening in the business with how the founder leads, decides, and operates.',
-      'If you have run EOS, implemented Traction, or used any structured operating framework \u2014 you already understand the value of operating on a system. Those frameworks were genuinely useful for their time.',
-      'CE.OS is what happens when that operating intelligence gets rebuilt from the ground up on AI \u2014 continuous rather than quarterly, proactive rather than scheduled, and connected to the actual live data of the business rather than a weekly scorecard.',
-      'While ClientBloom interprets your clients, CE.OS interprets the executive. The system now has both the business intelligence layer and the human operating layer working together.',
-      'As the rest of the world outsources their thinking to AI, CE.OS is built to do the opposite \u2014 use AI to sharpen yours.',
+      'CE.OS brings executive rhythm, decision support, reflection, accountability, and strategic guidance into the operating environment.',
     ],
     bullets: [
-      'CE.OS Executive Operating Layer \u2014 fully activated',
-      'Built on 20+ years of business development and leadership expertise',
-      'Long-term persistent memory \u2014 the system knows your context, history, and decisions',
-      'OPI (Operating Performance Index) \u2014 personal leadership performance tracked over time',
-      'Daily executive brief with strategic recommendations tailored to your exact situation',
-      'Decision journal with automated review tracking and pattern recognition',
-      'Replaces the manual cadence of quarterly operating frameworks with continuous AI rhythm',
+      'CE.OS Executive Operating Layer activated',
+      'Built on 20+ years of leadership expertise',
+      'Long-term persistent memory for context',
+      'OPI \u2014 leadership performance tracked over time',
+      'Daily executive brief with strategic recs',
+      'Decision journal with pattern recognition',
+      'Replaces quarterly frameworks with AI rhythm',
       'Private CE.OS Community (Circle)',
-      'Ongoing CE.OS framework updates as the intelligence layer evolves',
+      'Ongoing CE.OS framework updates',
     ],
     whoFor:
       'You have outgrown spreadsheet scorecards and quarterly check-ins. You want an operating layer that runs continuously, knows your business deeply, and gives you the same quality of strategic guidance a world-class operating partner would \u2014 without the consulting fee or the scheduling dependency.',
@@ -114,20 +103,26 @@ const layers: Layer[] = [
   },
 ]
 
+const CheckIcon = ({ color }: { color: string }) => (
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="w-5 h-5 flex-shrink-0 mt-0.5">
+    <path d="M5 10.5L8.5 14L15 7" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+)
+
 const FourLayerSystem = () => {
   return (
     <section
       id="system"
-      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 md:py-40"
+      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 lg:py-40"
     >
       <div className="flex flex-col items-center text-center mb-16">
         <p className="text-sm tracking-widest text-brand-orange uppercase mb-4">
           THE FOUR-LAYER SYSTEM
         </p>
-        <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
+        <h2 className="font-display text-4xl md:text-5xl font-bold mb-5 md:mb-6 mt-3 md:mt-4">
           One Operating Environment.{'\n'}Four Levels of Intelligence.
         </h2>
-        <p className="text-[#A1A1AA] text-base md:text-lg max-w-3xl">
+        <p className="text-base md:text-lg leading-relaxed text-[#A1A1AA] max-w-3xl">
           Each layer adds a new level of visibility, intelligence, and operating leverage. Start where you are. Add layers as your business grows.
         </p>
       </div>
@@ -144,39 +139,39 @@ const FourLayerSystem = () => {
           <p className="text-sm tracking-widest text-brand-orange uppercase mb-4">
             WHAT IT LOOKS LIKE IN PRACTICE
           </p>
-          <h3 className="font-display text-3xl md:text-4xl font-bold">
+          <h3 className="font-display text-3xl md:text-4xl font-bold mb-5 md:mb-6 mt-3 md:mt-4">
             Real Intelligence. Real Execution.
           </h3>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
           {[
             {
-              label: '[ Telegram · Voice Command Interface ]',
-              caption: 'Send instructions, query your pipeline, update client records — all through the AIOS interface on your phone.',
+              label: '[ Telegram \u00b7 Voice Command Interface ]',
+              caption: 'Send instructions, query your pipeline, update client records \u2014 all through the AIOS interface on your phone.',
               path: '/screenshots/telegram.png',
             },
             {
-              label: '[ GoHighLevel · Funnels Dashboard ]',
+              label: '[ GoHighLevel \u00b7 Funnels Dashboard ]',
               caption: 'Four complete funnel types installed, branded, and live inside your GHL sub-account.',
               path: '/screenshots/ghl.png',
             },
             {
-              label: '[ AIOS · Morning CEO Brief ]',
+              label: '[ AIOS \u00b7 Morning CEO Brief ]',
               caption: 'Your daily operating brief arrives before your workday starts. No dashboard required.',
               path: '/screenshots/brief.png',
             },
           ].map((card, idx) => (
             <div
               key={idx}
-              className="bg-[#111114] border border-[#1E1E24] rounded-xl p-4"
+              className="bg-[#111114] border border-[#1E1E24] rounded-xl p-5"
             >
               <div className="aspect-video bg-[#0A0A0B] rounded-lg flex items-center justify-center mb-3">
                 <span className="text-xs text-[#52525B] font-mono text-center px-4">
                   {card.label}
                 </span>
               </div>
-              <p className="text-sm text-[#A1A1AA] leading-relaxed">
+              <p className="text-base md:text-lg leading-relaxed text-[#A1A1AA]">
                 {card.caption}
               </p>
             </div>
@@ -202,7 +197,7 @@ const FourLayerSystem = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <div className="bg-[#111114] border border-[#1E1E24] rounded-xl p-8 relative md:ml-12">
+                <div className="bg-[#111114] border border-[#1E1E24] rounded-xl p-5 md:p-8 pb-6 relative md:ml-12">
                   {/* Includes above tag */}
                   {layer.includesAbove && (
                     <p className="text-xs text-[#52525B] mb-3">+ Includes everything above</p>
@@ -234,12 +229,12 @@ const FourLayerSystem = () => {
                   </div>
 
                   {/* Headline */}
-                  <h3 className="text-xl md:text-2xl font-semibold text-[#F4F4F5] mb-4">
+                  <h3 className="text-xl md:text-2xl font-semibold text-[#F4F4F5] mb-5 md:mb-6">
                     {layer.headline}
                   </h3>
 
                   {/* Body */}
-                  <div className="text-[#A1A1AA] text-base leading-relaxed mb-6 space-y-3">
+                  <div className="text-base md:text-lg leading-relaxed text-[#A1A1AA] mb-6 space-y-3">
                     {layer.body.map((paragraph, pIdx) => (
                       <p key={pIdx}>{paragraph}</p>
                     ))}
@@ -249,8 +244,8 @@ const FourLayerSystem = () => {
                   <ul className="space-y-3 mb-6">
                     {layer.bullets.map((bullet, bulletIndex) => (
                       <li key={bulletIndex} className="flex items-start gap-3">
-                        <Check className="w-4 h-4 text-brand-orange flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-[#A1A1AA] leading-relaxed">
+                        <CheckIcon color={layer.badgeColor} />
+                        <span className="text-base leading-relaxed text-[#A1A1AA]">
                           {bullet}
                         </span>
                       </li>
@@ -267,7 +262,7 @@ const FourLayerSystem = () => {
                         <TerminalChat />
                         <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-[#111114] to-transparent pointer-events-none md:hidden" />
                       </div>
-                      <p className="text-sm text-[#A1A1AA] mt-3 italic">
+                      <p className="text-base leading-relaxed text-[#A1A1AA] mt-3 italic">
                         AIOS connects to your operating environment and gives you a conversational interface into it — instead of a dashboard to navigate.
                       </p>
                     </div>
@@ -276,7 +271,7 @@ const FourLayerSystem = () => {
                   {/* Who this is for */}
                   <div className="bg-[#0A0A0B] border border-[#1E1E24] rounded-lg p-5">
                     <p className="text-xs text-[#52525B] uppercase tracking-wider mb-2 font-semibold">Who this is for</p>
-                    <p className="text-sm text-[#A1A1AA] leading-relaxed">
+                    <p className="text-base leading-relaxed text-[#A1A1AA]">
                       {layer.whoFor}
                     </p>
                   </div>

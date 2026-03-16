@@ -5,7 +5,7 @@ import { AnimatedSection } from '@/components/MotionWrapper';
 
 export default function VSLVideo() {
   return (
-    <section id="overview" className="w-full py-24 md:py-36 px-4 md:px-8 bg-[#0A0A0B]">
+    <section id="overview" className="w-full py-20 md:py-28 lg:py-40 px-4 md:px-8 bg-[#0A0A0B]">
       <div className="max-w-6xl mx-auto">
         <AnimatedSection>
           <div className="space-y-8 md:space-y-12">
@@ -18,7 +18,7 @@ export default function VSLVideo() {
 
             {/* Headline */}
             <div className="text-center">
-              <h2 className="font-display text-4xl md:text-5xl font-bold leading-tight mb-6">
+              <h2 className="font-display text-4xl md:text-5xl font-bold leading-tight mb-5 md:mb-6 mt-3 md:mt-4">
                 Watch Before You Read Anything Else
               </h2>
             </div>

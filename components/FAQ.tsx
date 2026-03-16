@@ -41,13 +41,13 @@ export default function FAQ() {
   ];
 
   return (
-    <AnimatedSection id="faq" className="py-24 md:py-36 px-4">
+    <AnimatedSection id="faq" className="py-20 md:py-28 lg:py-40 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <div className="text-sm font-bold uppercase tracking-widest text-brand-orange mb-4">
             STRAIGHT ANSWERS
           </div>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-[#F4F4F5] mb-6">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-[#F4F4F5] mb-5 md:mb-6 mt-3 md:mt-4">
             Questions We Get Asked. Answered Directly.
           </h2>
         </div>

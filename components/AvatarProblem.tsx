@@ -35,7 +35,7 @@ const AvatarProblem = () => {
   return (
     <section
       id="avatar"
-      className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36"
+      className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 lg:py-40"
     >
       {/* Floating particles - hidden on mobile */}
       <div className="hidden md:block">
@@ -60,7 +60,7 @@ const AvatarProblem = () => {
         <p className="text-sm tracking-widest text-brand-orange uppercase mb-4">
           THIS IS BUILT FOR FOUNDERS WHOSE EXPERTISE OUTGREW THEIR INFRASTRUCTURE
         </p>
-        <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
+        <h2 className="font-display text-4xl md:text-5xl font-bold mb-5 md:mb-6 mt-3 md:mt-4">
           You Have Real Capability. Your Backend Doesn't Reflect It.
         </h2>
         <div className="text-[#A1A1AA] text-base md:text-lg leading-relaxed max-w-3xl space-y-4">
@@ -80,10 +80,10 @@ const AvatarProblem = () => {
       </div>
 
       <StaggerContainer>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 mt-12">
           {cards.map((card, index) => (
             <StaggerChild key={index}>
-              <div className="bg-[#111114] border border-[#1E1E24] rounded-xl p-6 hover:border-[#2E2E38] hover:-translate-y-1 transition-all duration-300">
+              <div className="bg-[#111114] border border-[#1E1E24] rounded-xl p-5 md:p-6 hover:border-[#2E2E38] hover:-translate-y-1 transition-all duration-300">
                 <p className="text-4xl font-display font-bold text-brand-orange">
                   {card.number}
                 </p>

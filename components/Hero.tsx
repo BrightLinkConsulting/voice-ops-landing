@@ -103,13 +103,13 @@ export default function Hero() {
           >
             <a
               href="#pricing"
-              className="w-full sm:w-auto px-8 py-4 bg-[#E8600A] text-white rounded-lg font-semibold flex items-center justify-center hover:bg-[#d4570a] transition-all duration-200 animate-pulse-orange hover:shadow-[0_0_30px_rgba(232,96,10,0.4)]"
+              className="w-full sm:w-auto py-4 md:py-5 px-8 md:px-10 text-sm md:text-base font-semibold tracking-wide bg-[#E8600A] text-white rounded-lg flex items-center justify-center hover:bg-[#d4570a] transition-all duration-200 animate-pulse-orange hover:shadow-[0_0_30px_rgba(232,96,10,0.4)]"
             >
               See Which Layer Fits Your Stage →
             </a>
             <a
               href="#overview"
-              className="w-full sm:w-auto px-8 py-4 border border-[#2E2E38] text-[#A1A1AA] rounded-lg font-semibold hover:border-[#E8600A] hover:text-white transition-all duration-200 text-center"
+              className="w-full sm:w-auto py-4 md:py-5 px-8 md:px-10 text-sm md:text-base font-semibold tracking-wide border border-[#2E2E38] text-[#A1A1AA] rounded-lg hover:border-[#E8600A] hover:text-white transition-all duration-200 text-center"
             >
               Watch the 3-Minute Overview
             </a>
