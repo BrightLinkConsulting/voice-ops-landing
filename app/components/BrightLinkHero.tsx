@@ -239,7 +239,7 @@ export function BrightLinkHero() {
           font-size: clamp(56px, 9.5vw, 96px);
           line-height: 0.88;
           color: #F4F4F5;
-          letter-spacing: -0.03em;
+          letter-spacing: 0.01em;
           text-transform: none;
           display: block;
           text-shadow: 0 0 40px rgba(0,0,0,0.98), 0 0 80px rgba(0,0,0,0.9), 0 2px 12px rgba(0,0,0,0.95);
@@ -278,10 +278,10 @@ export function BrightLinkHero() {
 
         .hero-tagline {
           font-family: 'Barlow Condensed', sans-serif;
-          font-size: 13px;
+          font-size: clamp(15px, 2.2vw, 19px);
           font-weight: 400;
           color: rgba(244,244,245,0.55);
-          letter-spacing: 0.05em;
+          letter-spacing: 0.04em;
           margin-top: 22px;
           line-height: 1.65;
           text-shadow: 0 0 20px rgba(0,0,0,0.9), 0 1px 6px rgba(0,0,0,0.85);
@@ -294,7 +294,7 @@ export function BrightLinkHero() {
           font-weight: 400;
           color: rgba(244,244,245,0.88);
           font-family: 'Cormorant Garamond', serif;
-          font-size: 15px;
+          font-size: clamp(17px, 2.5vw, 22px);
           letter-spacing: 0.02em;
         }
 
