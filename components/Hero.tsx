@@ -24,15 +24,32 @@ const itemVariants = {
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen pt-20 md:pt-32 pb-20 px-4 md:px-8 overflow-hidden">
-      {/* Animated radial glow */}
-      <div className="absolute inset-0 pointer-events-none z-0">
+    <section className="relative min-h-screen py-20 sm:py-28 md:py-36 px-4 md:px-8 overflow-hidden">
+      {/* Multi-layer animated glow system */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        {/* Layer 1 — Primary pulse (center) */}
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 hero-glow-pulse"
           style={{
-            background: 'radial-gradient(ellipse 60% 40% at 50% 40%, rgba(232,96,10,0.12) 0%, transparent 70%)',
-            animation: 'hero-pulse 12s ease-in-out infinite',
-            willChange: 'transform',
+            background: 'radial-gradient(ellipse 55% 45% at 50% 42%, rgba(232,96,10,0.18) 0%, rgba(232,96,10,0.06) 45%, transparent 70%)',
+            willChange: 'transform, opacity',
+            transformOrigin: 'center',
+          }}
+        />
+        {/* Layer 2 — Slow drift (offset right) */}
+        <div
+          className="absolute inset-0 hero-glow-drift"
+          style={{
+            background: 'radial-gradient(ellipse 35% 30% at 65% 38%, rgba(255,122,31,0.10) 0%, transparent 60%)',
+            willChange: 'transform, opacity',
+          }}
+        />
+        {/* Layer 3 — Counter-drift (offset left) */}
+        <div
+          className="absolute inset-0 hero-glow-counter"
+          style={{
+            background: 'radial-gradient(ellipse 30% 25% at 35% 48%, rgba(232,96,10,0.08) 0%, transparent 55%)',
+            willChange: 'transform, opacity',
           }}
         />
       </div>
@@ -40,7 +57,7 @@ export default function Hero() {
       {/* Grain overlay */}
       <div className="grain absolute inset-0 pointer-events-none opacity-5" />
 
-      <div className="relative max-w-7xl mx-auto z-[1]">
+      <div className="relative max-w-7xl mx-auto z-10">
         <motion.div
           className="flex flex-col items-center text-center"
           variants={containerVariants}
@@ -50,14 +67,14 @@ export default function Hero() {
           {/* Eyebrow */}
           <motion.div
             variants={itemVariants}
-            className="text-sm uppercase tracking-widest text-[#E8600A] font-body mb-4"
+            className="text-xs sm:text-sm uppercase tracking-widest text-[#E8600A] font-body mb-4 px-4 w-full text-center"
           >
             FOR SUBJECT MATTER EXPERTS READY TO SCALE
           </motion.div>
 
           {/* Headline */}
           <motion.div variants={itemVariants} className="mt-6">
-            <h1 className="font-display text-7xl md:text-8xl lg:text-9xl font-bold leading-tight">
+            <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold leading-tight">
               <div>Your Business Infrastructure.</div>
               <div>Installed, Intelligent,</div>
               <div className="italic text-[#E8600A]">Built to Scale.</div>
@@ -66,7 +83,7 @@ export default function Hero() {
 
           {/* Subheadline */}
           <motion.div variants={itemVariants} className="mt-6">
-            <p className="text-lg text-gray-400 text-center max-w-2xl mx-auto leading-relaxed font-body">
+            <p className="text-base sm:text-lg text-gray-400 text-center max-w-xl mx-auto leading-relaxed font-body px-4 sm:px-6">
               BrightLink Consulting installs the funnels, automations, community, and operating layers that help expert-led businesses grow — without living inside disconnected tools, messy handoffs, or duct-taped systems. Start with the infrastructure. Layer in intelligence, client insight, and executive operating capability as your business evolves.
             </p>
           </motion.div>
@@ -74,7 +91,7 @@ export default function Hero() {
           {/* Tagline */}
           <motion.div
             variants={itemVariants}
-            className="text-sm text-[#52525B] font-body italic mt-4"
+            className="text-sm sm:text-base text-[#52525B] font-body italic mt-4 text-center px-4"
           >
             BrightLink installs the system. AIOS makes it intelligent.
           </motion.div>
@@ -82,17 +99,20 @@ export default function Hero() {
           {/* CTAs */}
           <motion.div
             variants={itemVariants}
-            className="flex flex-col md:flex-row gap-4 md:gap-4 pt-8"
+            className="flex flex-col sm:flex-row gap-4 pt-8 w-full sm:w-auto"
           >
             <a
               href="#pricing"
-              className="px-8 py-4 bg-[#E8600A] text-white rounded-lg font-semibold flex items-center justify-center hover:bg-[#d4570a] transition-all duration-200 animate-pulse-orange hover:shadow-[0_0_30px_rgba(232,96,10,0.4)]"
+              className="w-full sm:w-auto px-8 py-4 bg-[#E8600A] text-white rounded-lg font-semibold flex items-center justify-center hover:bg-[#d4570a] transition-all duration-200 animate-pulse-orange hover:shadow-[0_0_30px_rgba(232,96,10,0.4)]"
             >
               See Which Layer Fits Your Stage →
             </a>
-            <button className="px-8 py-4 border border-[#2E2E38] text-[#A1A1AA] rounded-lg font-semibold hover:border-[#E8600A] hover:text-white transition-all duration-200">
+            <a
+              href="#overview"
+              className="w-full sm:w-auto px-8 py-4 border border-[#2E2E38] text-[#A1A1AA] rounded-lg font-semibold hover:border-[#E8600A] hover:text-white transition-all duration-200 text-center"
+            >
               Watch the 3-Minute Overview
-            </button>
+            </a>
           </motion.div>
         </motion.div>
       </div>

@@ -2,10 +2,12 @@
 
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import CalendarModal from '@/components/CalendarModal';
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isCalendarOpen, setIsCalendarOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -63,7 +65,10 @@ export default function Navigation() {
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <button className="px-6 py-2 bg-[#E8600A] text-white rounded-lg font-semibold text-sm hover:bg-[#E8600A] transition-all duration-200 shadow-lg hover:shadow-[0_0_30px_rgba(232,96,10,0.4)]">
+          <button
+            onClick={() => setIsCalendarOpen(true)}
+            className="px-6 py-2 bg-[#E8600A] text-white rounded-lg font-semibold text-sm hover:bg-[#E8600A] transition-all duration-200 shadow-lg hover:shadow-[0_0_30px_rgba(232,96,10,0.4)]"
+          >
             Book a Strategy Call
           </button>
         </div>
@@ -92,12 +97,18 @@ export default function Navigation() {
                 {link.label}
               </a>
             ))}
-            <button className="px-8 py-4 bg-[#E8600A] text-white rounded-lg font-semibold mt-8 hover:bg-[#E8600A] transition-all duration-200">
+            <button
+              onClick={() => { setIsCalendarOpen(true); setIsMobileMenuOpen(false); }}
+              className="px-8 py-4 bg-[#E8600A] text-white rounded-lg font-semibold mt-8 hover:bg-[#E8600A] transition-all duration-200"
+            >
               Book a Strategy Call
             </button>
           </div>
         </div>
       )}
+
+      {/* Calendar Modal */}
+      <CalendarModal isOpen={isCalendarOpen} onClose={() => setIsCalendarOpen(false)} />
     </nav>
   );
 }
