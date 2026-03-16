@@ -26,8 +26,7 @@ export default function WhatItReplaces() {
             THE MATH IS SIMPLE
           </div>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-[#F4F4F5] mb-5 md:mb-6 mt-3 md:mt-4">
-            Replace a Patchwork Stack with One<br />
-            Connected Operating Environment.
+            Replace a Patchwork Stack with{' '}<span className="headline-accent">One Connected Operating Environment.</span>
           </h2>
           <p className="text-base leading-relaxed text-[#A1A1AA] max-w-3xl mx-auto">
             The point is not just saving on software. It is reducing operational drag, eliminating handoff friction, and giving your business one coherent operating environment — instead of a pile of disconnected apps that each demand your attention.

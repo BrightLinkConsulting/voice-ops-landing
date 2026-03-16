@@ -61,7 +61,7 @@ const AvatarProblem = () => {
           THIS IS BUILT FOR FOUNDERS WHOSE EXPERTISE OUTGREW THEIR INFRASTRUCTURE
         </p>
         <h2 className="font-display text-4xl md:text-5xl font-bold mb-5 md:mb-6 mt-3 md:mt-4">
-          You Have Real Capability. Your Backend Doesn't Reflect It.
+          You Have Real Capability. Your Backend{' '}<span className="headline-accent">Doesn&apos;t Reflect It.</span>
         </h2>
         <div className="text-[#A1A1AA] text-base md:text-lg leading-relaxed max-w-3xl space-y-4">
           <p>

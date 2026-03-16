@@ -36,7 +36,7 @@ const HowItWorks = () => {
           THE INSTALLATION PROCESS
         </p>
         <h2 className="font-display text-4xl md:text-5xl font-bold mb-5 md:mb-6 mt-3 md:mt-4">
-          From Strategy Call to Fully Operating{'\n'}Business in 7–14 Days.
+          From Strategy Call to{' '}<span className="headline-accent">Fully Operating Business</span>{' '}in 7–14 Days.
         </h2>
       </div>
 

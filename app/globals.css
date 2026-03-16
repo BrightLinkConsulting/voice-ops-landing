@@ -192,6 +192,16 @@ body {
   background: #3A3A42;
 }
 
+/* Headline accent — Cormorant Garamond italic for strategic emphasis */
+.headline-accent {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #E8600A;
+  font-size: 1.12em;
+  letter-spacing: 0.01em;
+}
+
 /* FAQ accordion */
 .accordion-chevron {
   transition: transform 0.2s ease;

@@ -190,7 +190,7 @@ export default function PricingTiers() {
             CHOOSE YOUR LAYER
           </div>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-[#F4F4F5] mb-5 md:mb-6 mt-3 md:mt-4">
-            Start with the Infrastructure.{'\n'}Add Intelligence as You Grow.
+            Start with the Infrastructure.{' '}<span className="headline-accent">Add Intelligence as You Grow.</span>
           </h2>
           <p className="text-base md:text-lg leading-relaxed text-[#A1A1AA] max-w-2xl mx-auto">
             Every tier is a monthly subscription. No setup fees. No long-term contracts. Start at the layer that fits where you are today — and move up as your operating needs evolve.

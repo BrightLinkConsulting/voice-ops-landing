@@ -39,7 +39,7 @@ export default function FinalCTA() {
         </div>
 
         <h2 className="font-display text-4xl md:text-5xl font-bold text-[#F4F4F5] mb-5 md:mb-6 mt-3 md:mt-4">
-          Ready to Install the System{'\n'}Your Business Actually Needs?
+          Ready to Install the System{' '}<span className="headline-accent">Your Business Actually Needs?</span>
         </h2>
 
         <p className="text-base md:text-lg leading-relaxed text-[#A1A1AA] mb-8 max-w-2xl mx-auto">

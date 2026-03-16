@@ -162,7 +162,7 @@ const FourLayerSystem = () => {
           THE FOUR-LAYER SYSTEM
         </p>
         <h2 className="font-display text-4xl md:text-5xl font-bold mb-5 md:mb-6 mt-3 md:mt-4">
-          One Operating Environment.{'\n'}Four Levels of Intelligence.
+          One Operating Environment.{' '}<span className="headline-accent">Four Levels of Intelligence.</span>
         </h2>
         <p className="text-base md:text-lg leading-relaxed text-[#A1A1AA] max-w-3xl">
           Each layer adds a new level of visibility, intelligence, and operating leverage. Start where you are. Add layers as your business grows.

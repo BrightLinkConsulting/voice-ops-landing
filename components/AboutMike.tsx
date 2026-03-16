@@ -14,7 +14,7 @@ export default function AboutMike() {
           {/* Content - left side, wider */}
           <div className="md:col-span-3 order-2 md:order-1">
             <h2 className="font-display text-3xl md:text-4xl xl:text-5xl font-bold text-[#F4F4F5] mb-6 leading-tight">
-              We Take Your Goals as Seriously as You Do.
+              We Take Your Goals{' '}<span className="headline-accent">as Seriously as You Do.</span>
             </h2>
 
             <div className="space-y-4 text-base text-[#A1A1AA] leading-relaxed">
