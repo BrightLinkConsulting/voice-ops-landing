@@ -6,7 +6,7 @@ const LAYERS = [
   {
     id: 1,
     label: 'Layer 01',
-    sub: 'Installed Infrastructure',
+    sub: 'Funnels, automations, and CRM — done for you',
     color: '#E4A124',
     ringColor: '#BA7517',
     glowColor: '#BA751744',
@@ -18,7 +18,7 @@ const LAYERS = [
     ringId: 'r1',
     fillId: 'f1',
     lblId: 'lbl1',
-    lblText: '01 · Installed Infrastructure',
+    lblText: '01 · Marketing Ecosystem, Installed',
     lblFill: '#E4A124',
     lblY: 167,
     r: 98,
@@ -28,7 +28,7 @@ const LAYERS = [
   {
     id: 2,
     label: 'Layer 02',
-    sub: 'AIOS Intelligence',
+    sub: 'Run your entire business from your phone',
     color: '#5AAEE8',
     ringColor: '#185FA5',
     glowColor: '#185FA544',
@@ -40,7 +40,7 @@ const LAYERS = [
     ringId: 'r2',
     fillId: 'f2',
     lblId: 'lbl2',
-    lblText: '02 · AIOS Intelligence',
+    lblText: '02 · Voice-Command Business Intelligence',
     lblFill: '#5AAEE8',
     lblY: 124,
     r: 141,
@@ -50,7 +50,7 @@ const LAYERS = [
   {
     id: 3,
     label: 'Layer 03',
-    sub: 'ClientBloom',
+    sub: 'Know which clients need attention before they go quiet',
     color: '#1DBF96',
     ringColor: '#0F6E56',
     glowColor: '#0F6E5644',
@@ -62,7 +62,7 @@ const LAYERS = [
     ringId: 'r3',
     fillId: 'f3',
     lblId: 'lbl3',
-    lblText: '03 · ClientBloom',
+    lblText: '03 · Predictive Client Intelligence',
     lblFill: '#1DBF96',
     lblY: 71,
     r: 194,
@@ -72,7 +72,7 @@ const LAYERS = [
   {
     id: 4,
     label: 'Layer 04',
-    sub: 'CE.OS',
+    sub: 'Your operating rhythm, continuous and AI-driven',
     color: '#8B82E0',
     ringColor: '#534AB7',
     glowColor: '#534AB744',
@@ -84,7 +84,7 @@ const LAYERS = [
     ringId: 'r4',
     fillId: 'f4',
     lblId: 'lbl4',
-    lblText: '04 · CE.OS',
+    lblText: '04 · AI Chief Executive Operating System',
     lblFill: '#8B82E0',
     lblY: 15,
     r: 250,
@@ -182,22 +182,22 @@ export default function OrbitalRings() {
         <text id="lbl4" x="340" y="15" textAnchor="middle" dominantBaseline="central"
           fontSize="10" fontWeight="500" fontFamily="var(--font-body)" fill="#8B82E0" opacity="0"
           style={{ transition: 'opacity 0.35s ease', pointerEvents: 'none' }}>
-          04 · CE.OS
+          04 · AI Chief Executive Operating System
         </text>
         <text id="lbl3" x="340" y="71" textAnchor="middle" dominantBaseline="central"
           fontSize="10" fontWeight="500" fontFamily="var(--font-body)" fill="#1DBF96" opacity="0"
           style={{ transition: 'opacity 0.35s ease', pointerEvents: 'none' }}>
-          03 · ClientBloom
+          03 · Predictive Client Intelligence
         </text>
         <text id="lbl2" x="340" y="124" textAnchor="middle" dominantBaseline="central"
           fontSize="10" fontWeight="500" fontFamily="var(--font-body)" fill="#5AAEE8" opacity="0"
           style={{ transition: 'opacity 0.35s ease', pointerEvents: 'none' }}>
-          02 · AIOS Intelligence
+          02 · Voice-Command Business Intelligence
         </text>
         <text id="lbl1" x="340" y="167" textAnchor="middle" dominantBaseline="central"
           fontSize="10" fontWeight="500" fontFamily="var(--font-body)" fill="#E4A124" opacity="0"
           style={{ transition: 'opacity 0.35s ease', pointerEvents: 'none' }}>
-          01 · Installed Infrastructure
+          01 · Marketing Ecosystem, Installed
         </text>
 
         {/* Halo */}
@@ -247,7 +247,7 @@ export default function OrbitalRings() {
               {layer.label}
             </span>
             <span
-              className="whitespace-nowrap leading-tight text-gray-400"
+              className="leading-tight text-gray-400"
               style={{ fontSize: 'clamp(10px, 2.2vw, 12px)' }}
             >
               {layer.sub}
