@@ -153,7 +153,7 @@ export function BrightLinkHero() {
       >
         {/* Eyebrow */}
         <div className="hero-eyebrow">
-          For Expert-Led Businesses Ready to Scale
+          For Founders Whose Expertise Has Outgrown Their Systems
         </div>
 
         {/* H1 bold lines */}
@@ -172,7 +172,7 @@ export function BrightLinkHero() {
           We Install the{" "}
           <em>Funnels, Automations,</em> and{" "}
           <em>AI-Powered Operating System</em>{" "}
-          Your Business Needs to Scale — Without Patching Together Tools,
+          Your Business Needs to Grow — Without Patching Together Tools,
           Dashboards, and Disconnected Software.
         </p>
 
