@@ -102,6 +102,49 @@ const layers: Layer[] = [
   },
 ]
 
+const layerScreenshots: Record<string, { src: string; alt: string; label: string; lines: string[]; glowColor: string }> = {
+  STARTER: {
+    src: '/screenshots/layer1-infrastructure.png',
+    alt: 'BrightLink system confirmation showing all infrastructure installed and running',
+    label: 'What you see after installation',
+    lines: [
+      'Six green checkmarks. Everything installed, branded, and running. Funnels, automations, CRM, communities. You didn\'t configure any of it.',
+      'This is what "done for you" actually looks like.',
+    ],
+    glowColor: '#E4A124',
+  },
+  SIGNATURE: {
+    src: '/screenshots/aios-voice-command.png',
+    alt: 'AIOS voice command interface on iPhone showing real-time business intelligence through Telegram',
+    label: 'Real conversation · AIOS via Telegram',
+    lines: [
+      'Ask for a pulse check. Get your pipeline status and flagged clients back in seconds. Request draft messages and approve them right from the thread.',
+      'No dashboard. No login. Just talk to your business.',
+    ],
+    glowColor: '#5AAEE8',
+  },
+  PRO: {
+    src: '/screenshots/layer3-clientbloom.png',
+    alt: 'ClientBloom agent proactively flagging an at-risk client and handling the outreach',
+    label: 'Real conversation · ClientBloom via Telegram',
+    lines: [
+      'The agent notices a client has gone quiet. It drafts a check-in message. You say "send it." It books a follow-up call for the next one. You never opened a dashboard.',
+      'Revenue protection that works like a conversation, not a spreadsheet.',
+    ],
+    glowColor: '#1DBF96',
+  },
+  'PRO PLUS': {
+    src: '/screenshots/layer4-ceos.png',
+    alt: 'CE.OS morning brief delivered as a simple conversation with three clear priorities',
+    label: 'Real conversation · CE.OS via Telegram',
+    lines: [
+      'Three priorities. Calendar already blocked. Renewal email already drafted. A pattern from your own decisions surfaced without you asking.',
+      'Strategic guidance that arrives before your day starts.',
+    ],
+    glowColor: '#8B82E0',
+  },
+}
+
 const CheckIcon = ({ color }: { color: string }) => (
   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="w-5 h-5 flex-shrink-0 mt-0.5">
     <path d="M5 10.5L8.5 14L15 7" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -251,34 +294,33 @@ const FourLayerSystem = () => {
                     ))}
                   </ul>
 
-                  {/* AIOS Screenshot inside Layer 02 */}
-                  {layer.badge === 'SIGNATURE' && (
+                  {/* Layer screenshot mockup */}
+                  {layerScreenshots[layer.badge] && (
                     <div className="mb-6">
                       <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10">
                         {/* iPhone screenshot */}
                         <div className="relative flex-shrink-0 w-[240px] sm:w-[280px] md:w-[300px]">
-                          {/* Blue glow behind the phone */}
+                          {/* Colored glow behind the phone */}
                           <div
                             className="absolute inset-0 rounded-3xl blur-2xl opacity-20"
-                            style={{ backgroundColor: '#5AAEE8' }}
+                            style={{ backgroundColor: layerScreenshots[layer.badge].glowColor }}
                           />
                           <img
-                            src="/screenshots/aios-voice-command.png"
-                            alt="AIOS voice command interface on iPhone showing real-time business intelligence through Telegram"
+                            src={layerScreenshots[layer.badge].src}
+                            alt={layerScreenshots[layer.badge].alt}
                             className="relative w-full h-auto rounded-2xl"
                           />
                         </div>
                         {/* Caption alongside */}
                         <div className="flex-1 text-center md:text-left">
                           <p className="text-xs font-mono text-gray-500 mb-3 uppercase tracking-wider">
-                            Real conversation · AIOS via Telegram
+                            {layerScreenshots[layer.badge].label}
                           </p>
-                          <p className="text-base md:text-lg leading-relaxed text-[#A1A1AA]">
-                            Ask for a pulse check. Get your OPI, pipeline status, and flagged clients back in seconds. Request draft messages for at-risk accounts and approve them right from the thread.
-                          </p>
-                          <p className="text-base md:text-lg leading-relaxed text-[#A1A1AA] mt-3">
-                            No dashboard. No login. Just talk to your business.
-                          </p>
+                          {layerScreenshots[layer.badge].lines.map((line, li) => (
+                            <p key={li} className={`text-base md:text-lg leading-relaxed text-[#A1A1AA]${li > 0 ? ' mt-3' : ''}`}>
+                              {line}
+                            </p>
+                          ))}
                         </div>
                       </div>
                     </div>
