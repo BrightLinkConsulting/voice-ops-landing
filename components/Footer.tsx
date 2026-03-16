@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-[#F4F4F5] mb-3">BRIGHTLINK CONSULTING</h3>
             <p className="text-sm text-[#52525B]">
-              Strategic Marketing Ecosystem Design for Message-Driven Businesses
+              Installed Infrastructure. Expanding Intelligence. Expert-Led Businesses.
             </p>
           </div>
 

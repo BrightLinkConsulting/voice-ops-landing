@@ -6,18 +6,18 @@ const AvatarProblem = () => {
   const cards = [
     {
       number: '01',
-      title: 'Your message is strong. Your machine is weak.',
-      body: 'You have a clear value proposition and a track record of results. But the systems you\'ve built around yourself haven\'t scaled. You\'re still grinding instead of growing.'
+      title: 'Your expertise has a ceiling. Your infrastructure is it.',
+      body: 'The gap between what you deliver and how your business operates is costing you time, clients, and momentum. The problem is not effort. It is the absence of the right operating environment.'
     },
     {
       number: '02',
-      title: 'You\'re a CEO acting like a systems admin.',
-      body: 'You\'ve spent the last 12 months learning Zapier, debugging integrations, and watching leads slip because your stack didn\'t talk to itself. That wasn\'t the job. You hired people for this.'
+      title: 'You are running the business. The business is not running itself.',
+      body: 'Every hour you spend managing tools, chasing data, and bridging disconnected systems is an hour you are not doing the work that only you can do. The infrastructure should be invisible. Right now it is consuming your week.'
     },
     {
       number: '03',
-      title: 'You\'ve tried the tools. They don\'t stick.',
-      body: 'You\'ve gone all-in on platforms before. HubSpot, Monday, Salesforce. Each one promised everything. Each one gathered dust because they demanded more time than they saved.'
+      title: 'You have tried the platforms. They did not solve the real problem.',
+      body: 'GoHighLevel, ClickFunnels, Kajabi \u2014 the platforms are capable. The problem was never the tool. It was the absence of a complete, connected operating environment built to your specific business model and designed to scale with you.'
     }
   ]
 
@@ -58,23 +58,25 @@ const AvatarProblem = () => {
 
       <div className="relative z-[1] flex flex-col items-center text-center mb-16">
         <p className="text-sm tracking-widest text-brand-orange uppercase mb-4">
-          THIS IS BUILT FOR SUBJECT MATTER EXPERTS WHO...
+          THIS IS BUILT FOR FOUNDERS WHOSE EXPERTISE OUTGREW THEIR INFRASTRUCTURE
         </p>
         <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
-          You Have Real Expertise. Your Tech Stack Doesn't Reflect It.
+          You Have Real Capability. Your Backend Doesn't Reflect It.
         </h2>
-        <p className="text-[#A1A1AA] text-base md:text-lg leading-relaxed max-w-3xl">
-          This system was designed for a very specific kind of business owner: someone with a track
-          record, a clear brand, and a working understanding of what their customers actually want.
-          You're not learning sales. You're not learning your market. You're past that. But somewhere
-          in the last few years, your infrastructure fell behind your own capability. Your message
-          stayed strong. Your machine got weak. And every tool you tried to fix it—Zapier,
-          HubSpot, that platform your VA said was perfect—added complexity instead of solving it.
-          This stack was built for that exact moment. It is not a template. It is not a landing page
-          builder. It is not a CRM for beginners. It is a personal acquisition and automation
-          infrastructure that scales with your own credibility. Everything else stops mattering the
-          moment you turn this on because there is nothing between you and revenue. That ends here.
-        </p>
+        <div className="text-[#A1A1AA] text-base md:text-lg leading-relaxed max-w-3xl space-y-4">
+          <p>
+            This is for consultants, advisors, authors, coaches, and expert-led businesses that already have real demand — but know their backend is too fragmented, manual, or founder-dependent to support the next stage of growth.
+          </p>
+          <p>
+            You have built something real. You have a methodology, a track record, a client base that proves your value. But your operating environment has not kept pace with your capability.
+          </p>
+          <p>
+            Your acquisition system is stitched together from tools that do not talk to each other. Your client delivery depends on memory, scattered notes, and instinct. Your operating rhythm is improvised rather than designed. And every new platform you have tried added complexity instead of clarity.
+          </p>
+          <p>
+            That ends here.
+          </p>
+        </div>
       </div>
 
       <StaggerContainer>

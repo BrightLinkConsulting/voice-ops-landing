@@ -6,7 +6,7 @@ const LAYERS = [
   {
     id: 1,
     label: 'Layer 01',
-    sub: 'Client Acquisition',
+    sub: 'Installed Infrastructure',
     color: '#E4A124',
     ringColor: '#BA7517',
     glowColor: '#BA751744',
@@ -18,7 +18,7 @@ const LAYERS = [
     ringId: 'r1',
     fillId: 'f1',
     lblId: 'lbl1',
-    lblText: '01 · Client Acquisition',
+    lblText: '01 · Installed Infrastructure',
     lblFill: '#E4A124',
     lblY: 167,
     r: 98,
@@ -28,7 +28,7 @@ const LAYERS = [
   {
     id: 2,
     label: 'Layer 02',
-    sub: 'AIOS Voice',
+    sub: 'AIOS Intelligence',
     color: '#5AAEE8',
     ringColor: '#185FA5',
     glowColor: '#185FA544',
@@ -40,7 +40,7 @@ const LAYERS = [
     ringId: 'r2',
     fillId: 'f2',
     lblId: 'lbl2',
-    lblText: '02 · AIOS · Voice Command',
+    lblText: '02 · AIOS Intelligence',
     lblFill: '#5AAEE8',
     lblY: 124,
     r: 141,
@@ -192,12 +192,12 @@ export default function OrbitalRings() {
         <text id="lbl2" x="340" y="124" textAnchor="middle" dominantBaseline="central"
           fontSize="10" fontWeight="500" fontFamily="var(--font-body)" fill="#5AAEE8" opacity="0"
           style={{ transition: 'opacity 0.35s ease', pointerEvents: 'none' }}>
-          02 · AIOS · Voice Command
+          02 · AIOS Intelligence
         </text>
         <text id="lbl1" x="340" y="167" textAnchor="middle" dominantBaseline="central"
           fontSize="10" fontWeight="500" fontFamily="var(--font-body)" fill="#E4A124" opacity="0"
           style={{ transition: 'opacity 0.35s ease', pointerEvents: 'none' }}>
-          01 · Client Acquisition
+          01 · Installed Infrastructure
         </text>
 
         {/* Halo */}

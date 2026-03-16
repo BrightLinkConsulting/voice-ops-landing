@@ -58,16 +58,16 @@ export default function Hero() {
           {/* Headline */}
           <motion.div variants={itemVariants} className="mt-6">
             <h1 className="font-display text-7xl md:text-8xl lg:text-9xl font-bold leading-tight">
-              <div>Your Business.</div>
-              <div>You Command.</div>
-              <div className="italic text-[#E8600A]">AI Executes.</div>
+              <div>Your Business Infrastructure.</div>
+              <div>Installed, Intelligent,</div>
+              <div className="italic text-[#E8600A]">Built to Scale.</div>
             </h1>
           </motion.div>
 
           {/* Subheadline */}
           <motion.div variants={itemVariants} className="mt-6">
             <p className="text-lg text-gray-400 text-center max-w-2xl mx-auto leading-relaxed font-body">
-              Built for subject matter experts who are done managing software and ready to command their business instead. We install a complete client acquisition system inside GoHighLevel — funnels, automations, community, and an AI operating layer you run by voice from your phone. Your expertise reaches more people. Your business handles the rest.
+              BrightLink Consulting installs the funnels, automations, community, and operating layers that help expert-led businesses grow — without living inside disconnected tools, messy handoffs, or duct-taped systems. Start with the infrastructure. Layer in intelligence, client insight, and executive operating capability as your business evolves.
             </p>
           </motion.div>
 
@@ -76,7 +76,7 @@ export default function Hero() {
             variants={itemVariants}
             className="text-sm text-[#52525B] font-body italic mt-4"
           >
-            Humans command. AI executes.
+            BrightLink installs the system. AIOS makes it intelligent.
           </motion.div>
 
           {/* CTAs */}
@@ -88,7 +88,7 @@ export default function Hero() {
               href="#pricing"
               className="px-8 py-4 bg-[#E8600A] text-white rounded-lg font-semibold flex items-center justify-center hover:bg-[#d4570a] transition-all duration-200 animate-pulse-orange hover:shadow-[0_0_30px_rgba(232,96,10,0.4)]"
             >
-              See the Four Tiers →
+              See Which Layer Fits Your Stage →
             </a>
             <button className="px-8 py-4 border border-[#2E2E38] text-[#A1A1AA] rounded-lg font-semibold hover:border-[#E8600A] hover:text-white transition-all duration-200">
               Watch the 3-Minute Overview

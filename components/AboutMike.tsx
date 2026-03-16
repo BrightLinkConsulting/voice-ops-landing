@@ -19,15 +19,15 @@ export default function AboutMike() {
 
             <div className="space-y-4 text-base text-[#A1A1AA] leading-relaxed">
               <p>
-                With over two decades building brands, leading launches, and architecting marketing and operational systems, I&apos;ve seen firsthand how difficult it can be to earn and keep the attention of your market — and how much harder it is to scale without the right infrastructure.
+                With over two decades building brands, leading launches, and architecting marketing and operational systems, I have seen firsthand how difficult it is to scale when the backend cannot keep up with the capability at the front of the business.
               </p>
 
               <p>
-                Voice Ops is the most complete version of everything I&apos;ve been building toward for the past several years. The client acquisition system, the retention intelligence, and now the AI operating layer that ties it all together into something you can actually run from your phone.
+                BrightLink Consulting is the clearest expression of the work I have spent years building toward — not just funnels, not just automations, and not just another AI feature. It is a connected operating environment for expert-led businesses that need their infrastructure to finally catch up with their capability.
               </p>
 
               <p>
-                I look forward to learning more about your objectives and exploring whether this is the right system for your next stage of growth.
+                Start with the system you need today. Then layer in AIOS, ClientBloom, and CE.OS as the business grows into a more intelligent, more integrated way of operating.
               </p>
             </div>
 

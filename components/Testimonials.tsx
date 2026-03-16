@@ -52,7 +52,7 @@ export default function Testimonials() {
             FROM THE PEOPLE WHO&apos;VE BEEN THROUGH THE BUILD
           </div>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-[#F4F4F5] mb-6">
-            Results Don&apos;t Lie. Neither Do Clients.
+            Real Operators. Real Results.
           </h2>
         </div>
 

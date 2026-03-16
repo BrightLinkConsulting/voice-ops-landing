@@ -20,7 +20,7 @@ export default function OnboardingReassurance() {
               You&apos;re Never Left to Figure It Out Alone
             </h3>
             <p className="text-base text-[#A1A1AA] leading-relaxed">
-              Every installation includes a live Zoom onboarding session. We log in with you, walk through the system, run your first voice commands together, and don&apos;t hand off until everything is working and you&apos;re confident. Starter clients receive a group session. Signature and above receive private 1:1 sessions.
+              Every installation includes a live Zoom handoff session. We walk through the system with you, run the first commands together, and do not consider the engagement complete until the operating environment is live and you understand how to use it. Starter clients receive a group session. Signature and above receive private one-to-one sessions.
             </p>
           </div>
         </div>

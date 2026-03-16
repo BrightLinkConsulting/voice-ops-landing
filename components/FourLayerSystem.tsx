@@ -22,9 +22,10 @@ const layers: Layer[] = [
     number: 'LAYER 01',
     badge: 'STARTER',
     badgeColor: '#E4A124',
-    headline: 'Your Entire Acquisition Engine, Installed and Running.',
+    headline: 'Installed Infrastructure. Done for You.',
     body: [
-      'Four complete funnel types built inside your GoHighLevel sub-account. Email and SMS automations pre-loaded. Community infrastructure fully configured. This is not a template you fill in. It\u2019s a finished, running system handed to you on day one.',
+      'We install the core infrastructure first \u2014 funnels, automation, CRM architecture, follow-up systems, and the operating backend your business should have had all along.',
+      'Four complete funnel types built inside your GoHighLevel sub-account. Email and SMS automations pre-loaded. Community infrastructure fully configured. This is not a template you fill in. It is a finished, running system handed to you on day one.',
     ],
     bullets: [
       'Lead Magnet Funnel + automation sequence',
@@ -35,50 +36,51 @@ const layers: Layer[] = [
       'Products and Courses Infrastructure',
     ],
     whoFor:
-      'You have the expertise and the audience but your acquisition infrastructure is held together with duct tape. You need a complete, professional system installed \u2014 not another template to figure out.',
+      'You have the expertise and the audience but your acquisition infrastructure is fragmented and founder-dependent. You need a complete, professional operating backend installed \u2014 not another platform to configure yourself.',
     includesAbove: false,
   },
   {
     number: 'LAYER 02',
     badge: 'SIGNATURE',
     badgeColor: '#5AAEE8',
-    headline: 'Talk to Your Business. Watch It Move.',
+    headline: 'AIOS: Your Business Intelligence Layer.',
     body: [
-      'Stop logging into dashboards. Start talking to your business.',
-      'Your dedicated Business Intelligence Agent connects to your entire GHL system via Telegram and executes commands by voice. Ask what\u2019s in your pipeline. Send emails. Update client profiles. Log notes. Trigger follow-up sequences. The same way email moved from desktop to your phone \u2014 your business operations are moving from dashboards to conversation.',
+      'AIOS gives you a live operating interface into your business through Telegram, briefings, queries, and guided action.',
+      'Instead of hunting through dashboards, you ask better questions, get clearer answers, and move faster. You can send a voice note and have AIOS execute across your CRM, update client records, surface pipeline status, or trigger follow-up sequences \u2014 all without opening a dashboard.',
+      'Voice is one interface. The real value is intelligence, visibility, and execution speed.',
     ],
     bullets: [
-      'Dedicated Business Intelligence Agent (via Telegram)',
-      'Voice and text commands executed across your entire tech stack',
-      'Pipeline queries and deal status on demand',
-      'CRM note logging and contact updates by voice',
-      'Daily morning brief \u2014 what needs your attention, before you ask',
+      'Dedicated AIOS Business Intelligence Agent (via Telegram)',
+      'Conversational interface into your business data and workflows',
+      'Pipeline queries, deal status, and CRM actions on demand',
+      'Voice and text commands executed across your tech stack',
+      'Daily operating brief \u2014 what needs attention, delivered before you ask',
     ],
     whoFor:
-      'You have the system. Now you want to run it from your phone without opening a single dashboard. This is the interface shift.',
+      'You have the infrastructure. Now you want the intelligence layer that connects it, interprets it, and lets you operate from context instead of from dashboards.',
     includesAbove: true,
   },
   {
     number: 'LAYER 03',
     badge: 'PRO',
     badgeColor: '#1DBF96',
-    headline: 'One Connected View. Every Client. Every Signal.',
+    headline: 'ClientBloom: Revenue Protection Through Client Intelligence.',
     body: [
-      'Getting clients is only half the equation. This tier is designed to help you keep them.',
-      'Right now your team is jumping between your CRM, project management tools, spreadsheets, and Slack threads trying to piece together how your clients are actually doing. You\u2019re relying on instinct, reacting after issues surface, and discovering what went wrong after it shows up in the numbers.',
-      'ClientBloom changes that. It connects to every tool you already use \u2014 no migrations, no hassles \u2014 and puts an AI-powered client services agent to work across all of them, 24/7. It learns your service model, builds a baseline for every individual client relationship, and tracks patterns across dozens of touchpoints and conversations.',
+      'Getting clients is expensive. Keeping the right ones is where your margin lives.',
+      'ClientBloom gives the system visibility into fulfillment, engagement, risk signals, and client health \u2014 so you are not managing retention by instinct, scattered notes, or delayed feedback.',
+      'It connects to every tool you already use \u2014 no migrations, no hassles \u2014 and builds an individual behavioral baseline for every client relationship. When a client\u2019s engagement deviates from their normal pattern, you find out before they go quiet.',
+      'The morning brief stops being a report. It becomes a client health briefing from a system that has been watching while you slept.',
     ],
     bullets: [
-      'ClientBloom client intelligence engine \u2014 connected to your full stack',
+      'ClientBloom client intelligence engine \u2014 embedded in your operating environment',
       'Individual Client Retention Score (CRS) per client, updating continuously',
-      'Individual baseline behavioral scoring \u2014 healthy looks different for every account',
-      'Proactive churn risk detection before clients go quiet',
-      'Engagement pattern monitoring across calls, messages, billing, and tasks',
-      'Early warning signals on billing status, sentiment shifts, and onboarding gaps',
-      'Morning brief upgraded: specific client actions by name, priority, and urgency',
+      'Behavioral baseline scoring \u2014 healthy looks different for every account',
+      'Proactive churn risk detection before clients disengage',
+      'Engagement pattern monitoring across calls, billing, messages, and tasks',
+      'Morning brief upgraded with specific client actions by name, priority, and urgency',
     ],
     whoFor:
-      'You have an active client base and retention directly affects your revenue. You want to stop wondering \u201care the clients happy?\u201d and start knowing \u2014 with certainty \u2014 which ones need attention today.',
+      'You have an active client base and retention directly affects your revenue. You want to stop managing relationships by instinct and start operating from real intelligence on what is actually happening inside each account.',
     includesAbove: true,
     credentialLine:
       'ClientBloom is the official digital implementation of Mike Walker\u2019s Amazon #1 bestseller, The Exceptional Experience.',
@@ -87,26 +89,27 @@ const layers: Layer[] = [
     number: 'LAYER 04',
     badge: 'PRO PLUS',
     badgeColor: '#8B82E0',
-    headline: 'EOS Built Your Operating System. CE.OS Puts Afterburners on It.',
+    headline: 'CE.OS: The Executive Layer for Founders Who Have Outgrown Manual Operating Systems.',
     body: [
-      'If you\u2019ve run EOS, implemented Traction, or worked through any business operating framework \u2014 you already understand the value of running your company on a system. Those frameworks are genuinely good. They gave millions of founders structure, rhythm, and a language for making decisions.',
-      'But they were built for a pre-AI world. They rely on weekly L10 meetings, manual scorecards, quarterly rocks tracked in spreadsheets, and leadership teams that schedule time to check whether the business is actually healthy. The framework is sound. The execution is slow.',
-      'CE.OS is what happens when that operating intelligence gets rebuilt from the ground up on AI.',
+      'CE.OS brings executive rhythm, decision support, reflection, accountability, and strategic guidance into the operating environment. It bridges what is happening in the business with how the founder leads, decides, and operates.',
+      'If you have run EOS, implemented Traction, or used any structured operating framework \u2014 you already understand the value of operating on a system. Those frameworks were genuinely useful for their time.',
+      'CE.OS is what happens when that operating intelligence gets rebuilt from the ground up on AI \u2014 continuous rather than quarterly, proactive rather than scheduled, and connected to the actual live data of the business rather than a weekly scorecard.',
+      'While ClientBloom interprets your clients, CE.OS interprets the executive. The system now has both the business intelligence layer and the human operating layer working together.',
+      'As the rest of the world outsources their thinking to AI, CE.OS is built to do the opposite \u2014 use AI to sharpen yours.',
     ],
     bullets: [
-      'CE.OS Chief Executive Operating System \u2014 fully activated',
-      'Trained on 20+ years of business development and executive leadership expertise',
-      'Long-term persistent memory \u2014 the system knows your history, patterns, and decisions',
-      'OPI (Operating Performance Index) \u2014 your personal leadership performance tracked continuously',
-      'Daily CEO brief with strategic recommendations tailored to your exact situation',
-      'Decision journal with automated review tracking and pattern analysis',
-      'Energy and mindset monitoring integrated into your morning brief',
-      'Replaces the manual cadence of EOS/Traction with a continuous AI-driven operating rhythm',
+      'CE.OS Executive Operating Layer \u2014 fully activated',
+      'Built on 20+ years of business development and leadership expertise',
+      'Long-term persistent memory \u2014 the system knows your context, history, and decisions',
+      'OPI (Operating Performance Index) \u2014 personal leadership performance tracked over time',
+      'Daily executive brief with strategic recommendations tailored to your exact situation',
+      'Decision journal with automated review tracking and pattern recognition',
+      'Replaces the manual cadence of quarterly operating frameworks with continuous AI rhythm',
       'Private CE.OS Community (Circle)',
-      'Ongoing CE.OS plugin updates as the system evolves',
+      'Ongoing CE.OS framework updates as the intelligence layer evolves',
     ],
     whoFor:
-      'You\u2019ve outgrown spreadsheet scorecards and quarterly check-ins. You want an operating system that runs continuously, knows your business deeply, and advises you like a world-class strategic partner.',
+      'You have outgrown spreadsheet scorecards and quarterly check-ins. You want an operating layer that runs continuously, knows your business deeply, and gives you the same quality of strategic guidance a world-class operating partner would \u2014 without the consulting fee or the scheduling dependency.',
     includesAbove: true,
   },
 ]
@@ -122,17 +125,17 @@ const FourLayerSystem = () => {
           THE FOUR-LAYER SYSTEM
         </p>
         <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
-          One Platform.{'\n'}Four Levels of Power.
+          One Operating Environment.{'\n'}Four Levels of Intelligence.
         </h2>
         <p className="text-[#A1A1AA] text-base md:text-lg max-w-3xl">
-          Start where you are. Scale as you grow. Every tier includes everything below it — and adds the next layer of intelligence.
+          Each layer adds a new level of visibility, intelligence, and operating leverage. Start where you are. Add layers as your business grows.
         </p>
       </div>
 
       {/* Orbital Rings */}
       <OrbitalRings />
       <p className="text-sm text-gray-500 text-center mb-16 mt-2">
-        Hover each layer to see how your system expands.
+        Hover each layer to see how the operating environment expands.
       </p>
 
       {/* Product Screenshots */}
@@ -142,7 +145,7 @@ const FourLayerSystem = () => {
             WHAT IT LOOKS LIKE IN PRACTICE
           </p>
           <h3 className="font-display text-3xl md:text-4xl font-bold">
-            Real Commands. Real Results.
+            Real Intelligence. Real Execution.
           </h3>
         </div>
 
@@ -150,7 +153,7 @@ const FourLayerSystem = () => {
           {[
             {
               label: '[ Telegram · Voice Command Interface ]',
-              caption: 'Send emails, update CRM, query your pipeline — all by voice from your phone.',
+              caption: 'Send instructions, query your pipeline, update client records — all through the AIOS interface on your phone.',
               path: '/screenshots/telegram.png',
             },
             {
@@ -160,7 +163,7 @@ const FourLayerSystem = () => {
             },
             {
               label: '[ AIOS · Morning CEO Brief ]',
-              caption: 'Your daily briefing arrives in Telegram before your workday starts. No dashboard required.',
+              caption: 'Your daily operating brief arrives before your workday starts. No dashboard required.',
               path: '/screenshots/brief.png',
             },
           ].map((card, idx) => (
@@ -258,14 +261,14 @@ const FourLayerSystem = () => {
                   {layer.badge === 'SIGNATURE' && (
                     <div className="mb-6">
                       <p className="text-xs font-mono text-gray-500 mb-2">
-                        // Live example — Telegram · Voice Ops AI
+                        // Live example — Telegram · AIOS Interface
                       </p>
                       <div className="max-h-72 overflow-hidden relative">
                         <TerminalChat />
                         <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-[#111114] to-transparent pointer-events-none md:hidden" />
                       </div>
                       <p className="text-sm text-[#A1A1AA] mt-3 italic">
-                        This is the interface shift. The same way email moved from desktop to mobile — your business operations are moving from dashboards to conversation.
+                        AIOS connects to your operating environment and gives you a conversational interface into it — instead of a dashboard to navigate.
                       </p>
                     </div>
                   )}
@@ -293,7 +296,7 @@ const FourLayerSystem = () => {
 
       {/* Closing line */}
       <p className="text-xl font-semibold text-center text-white mt-8">
-        EOS gave you the structure. CE.OS gives you the intelligence.
+        The system installs the machine. AIOS makes it intelligent. ClientBloom protects the client layer. CE.OS sharpens the executive.
       </p>
     </section>
   )

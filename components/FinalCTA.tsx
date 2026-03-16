@@ -34,11 +34,11 @@ export default function FinalCTA() {
         </div>
 
         <h2 className="font-display text-4xl md:text-5xl font-bold text-[#F4F4F5] mb-6">
-          Ready to Command Your Business?
+          Ready to Install the System{'\n'}Your Business Actually Needs?
         </h2>
 
         <p className="text-base text-[#A1A1AA] leading-relaxed mb-8 max-w-2xl mx-auto">
-          Pick your tier and we&apos;ll have your system installed and running within 14 days. No strategy call required for Starter or Signature — just choose your tier and we&apos;ll reach out to schedule your onboarding. Pro and Pro Plus clients receive a private strategy session before we begin building.
+          Choose your starting layer and we will have your operating environment installed and running within 14 days. Starter and Signature clients begin with an intake form and we schedule onboarding from there. Pro and Pro Plus clients receive a private strategy session before we begin the build.
         </p>
 
         <p className="text-[#A1A1AA] font-semibold mb-8">On the strategy call, we'll either:</p>
@@ -47,24 +47,24 @@ export default function FinalCTA() {
           <div className="flex items-start gap-3">
             <Check className="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" />
             <span className="text-[#A1A1AA] text-left">
-              Confirm alignment and outline next steps
+              Confirm the right layer for your current stage
             </span>
           </div>
           <div className="flex items-start gap-3">
             <Check className="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" />
             <span className="text-[#A1A1AA] text-left">
-              Provide clarity and direction you can implement independently
+              Map your existing stack and identify the gaps
             </span>
           </div>
         </div>
 
         <p className="text-[#A1A1AA] italic mb-12">
-          Either way, you leave the call with more insight than you arrived with.
+          Either way, you leave the call with a clear picture of what your operating environment should look like.
         </p>
 
         <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
           <button className="w-full md:w-auto px-8 py-4 bg-brand-orange text-white rounded-lg font-semibold animate-pulse-orange hover:bg-orange-600 transition-all">
-            Start the Conversation →
+            Start With the Right Layer →
           </button>
           <button className="w-full md:w-auto px-8 py-4 border border-[#1E1E24] text-[#A1A1AA] rounded-lg font-semibold hover:border-brand-orange hover:text-brand-orange transition-all">
             Watch the Overview Video

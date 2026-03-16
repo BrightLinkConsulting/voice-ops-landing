@@ -6,23 +6,23 @@ const HowItWorks = () => {
   const steps = [
     {
       number: '01',
-      title: 'Strategy + Intake',
-      body: 'We spend time understanding your business, your customers, your offer, and your current infrastructure. We document everything we learn into a technical specification that becomes the foundation for everything that follows.'
+      title: 'Strategic Mapping',
+      body: 'We map your current operating environment, identify the gaps, clarify your offer structure, and establish the technical foundation for everything that follows. You arrive with your business context. We arrive with the build specification.'
     },
     {
       number: '02',
-      title: 'Snapshot Installation',
-      body: 'Your acquisition system, landing pages, voice agents, and business logic get built and configured. We run parallel testing, connect your integrations, and stress-test under real-world conditions.'
+      title: 'System Deployment',
+      body: 'Your acquisition system, funnel infrastructure, community architecture, and automation layer get built and configured inside your GoHighLevel sub-account. We test, connect integrations, and validate before anything goes live.'
     },
     {
       number: '03',
-      title: 'AIOS Connection + Testing',
-      body: 'The AI Operating System connects to your infrastructure and learns your business logic. We run scenarios, watch decision trees execute, and refine until the system moves like an extension of you.'
+      title: 'Intelligence Layer Activation',
+      body: 'AIOS connects to your installed environment and begins interpreting your business data. We configure your operating brief, establish your Telegram interface, and run live tests until the intelligence layer is working as an extension of how you operate.'
     },
     {
       number: '04',
-      title: 'Onboarding + Handoff',
-      body: 'You learn the system from the inside out. We walk through your first conversations, show you how to read signals, and hand off complete documentation. You own it. You run it. You scale it.'
+      title: 'Executive Onboarding + Go Live',
+      body: 'You walk through the system with our team on a live Zoom session. We confirm every component, run your first real commands together, and hand off complete documentation. You leave with a running operating environment and the context to use it confidently.'
     }
   ]
 
@@ -36,7 +36,7 @@ const HowItWorks = () => {
           THE INSTALLATION PROCESS
         </p>
         <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
-          From Intake Call to Voice-Operated Business in 7-14 Days.
+          From Strategy Call to Fully Operating{'\n'}Business in 7–14 Days.
         </h2>
       </div>
 

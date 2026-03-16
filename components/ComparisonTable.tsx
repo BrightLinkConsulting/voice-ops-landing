@@ -37,7 +37,7 @@ export default function ComparisonTable() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-[#F4F4F5] mb-6">
-            How We Compare
+            How the Layers Stack Up
           </h2>
         </div>
 

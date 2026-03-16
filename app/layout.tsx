@@ -22,11 +22,11 @@ const mono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Voice Ops by BrightLink — Command Your Business by Voice',
+  title: 'BrightLink Consulting — Installed Infrastructure. Expanding Intelligence.',
   description: 'A done-for-you business system installation: GoHighLevel CRM snapshot + AI Operating System you command by voice through Telegram. Built for subject matter experts ready to scale.',
   metadataBase: new URL('https://voiceops.brightlinkconsulting.com'),
   openGraph: {
-    title: 'Voice Ops by BrightLink — Command Your Business by Voice',
+    title: 'BrightLink Consulting — Installed Infrastructure. Expanding Intelligence.',
     description: 'Stop managing your business. Start commanding it. Complete GHL system + AI voice command layer installed in 7-14 days.',
     type: 'website',
   },

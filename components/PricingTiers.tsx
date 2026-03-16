@@ -42,7 +42,7 @@ export default function PricingTiers() {
       annual: '$970/yr',
       annualSavings: 'save 2 months',
       tagline: 'Your complete acquisition system, installed and running.',
-      bestFor: 'Founders who need a professional system built, not a template to figure out.',
+      bestFor: 'Expert-led businesses that need a complete, professional operating backend installed and running — not another platform to configure.',
       features: [
         { name: 'Complete GHL sub-account snapshot installation', included: true },
         { name: 'Lead Magnet Funnel + email/SMS automation', included: true },
@@ -72,7 +72,7 @@ export default function PricingTiers() {
       annual: '$1,470/yr',
       annualSavings: 'save 2 months',
       tagline: 'Everything in Starter, plus your voice-command BI Agent.',
-      bestFor: 'Founders ready to stop logging into dashboards and start commanding their business by voice.',
+      bestFor: 'Founders ready to add the AIOS intelligence layer and operate from context and conversation instead of dashboards.',
       features: [
         { name: 'Everything in Starter', included: true },
         { name: 'Dedicated Business Intelligence Agent (Telegram)', included: true },
@@ -98,7 +98,7 @@ export default function PricingTiers() {
       annual: '$4,470/yr',
       annualSavings: 'save 2 months',
       tagline: 'Everything in Signature, plus ClientBloom client intelligence.',
-      bestFor: 'Founders with an active client base who need to know which relationships need attention before they go quiet.',
+      bestFor: 'Operators with an active client base who need real visibility into client health, retention risk, and fulfillment performance.',
       features: [
         { name: 'Everything in Signature', included: true },
         { name: 'ClientBloom client intelligence engine activated', included: true },
@@ -125,7 +125,7 @@ export default function PricingTiers() {
       annual: '$9,970/yr',
       annualSavings: 'save 2 months',
       tagline: 'Everything in Pro, plus CE.OS \u2014 the Chief Executive OS.',
-      bestFor: 'Founders who\u2019ve outgrown EOS/Traction and want an AI-driven operating system that runs continuously, not quarterly.',
+      bestFor: 'Founders who have outgrown manual operating frameworks and want an executive intelligence layer that runs continuously alongside the business.',
       features: [
         { name: 'Everything in Pro', included: true },
         { name: 'CE.OS Chief Executive Operating System activated', included: true },
@@ -151,17 +151,17 @@ export default function PricingTiers() {
     {
       icon: RefreshCw,
       label: 'Monthly subscription',
-      description: 'Cancel anytime. Your system runs as long as your subscription does.',
+      description: 'Cancel anytime. Your operating environment runs as long as your subscription does.',
     },
     {
       icon: Layers,
-      label: 'Cumulative tiers',
-      description: 'Every tier includes everything below it. Move up anytime.',
+      label: 'Cumulative layers',
+      description: 'Every tier includes everything below it. Add the next layer when you are ready.',
     },
     {
       icon: Shield,
       label: 'Your sub-account',
-      description: 'Everything lives in your GHL sub-account. Cancel and access deactivates.',
+      description: 'Everything is installed inside your GHL sub-account. It is yours to operate.',
     },
   ];
 
@@ -181,13 +181,13 @@ export default function PricingTiers() {
       <div className="relative z-[1] max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <div className="text-sm font-bold uppercase tracking-widest text-brand-orange mb-4">
-            CHOOSE YOUR TIER
+            CHOOSE YOUR LAYER
           </div>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-[#F4F4F5] mb-6">
-            Start Where You Are.{'\n'}Scale As You Grow.
+            Start with the Infrastructure.{'\n'}Add Intelligence as You Grow.
           </h2>
           <p className="text-base leading-relaxed text-[#A1A1AA] max-w-2xl mx-auto">
-            Every tier is a monthly subscription. No setup fees. No long-term contracts. If you cancel, your sub-account deactivates. Your system runs as long as your subscription does.
+            Every tier is a monthly subscription. No setup fees. No long-term contracts. Start at the layer that fits where you are today — and move up as your operating needs evolve.
           </p>
         </div>
 

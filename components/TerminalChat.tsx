@@ -113,7 +113,7 @@ export default function TerminalChat() {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#111114] opacity-0 md:opacity-100 pointer-events-none rounded-xl" />
 
       <div className="font-mono text-[#52525B] text-xs mb-4 border-b border-[#1E1E24] pb-4">
-        // Telegram — Voice Ops AI
+        // Telegram — AIOS Interface
       </div>
 
       <div className="space-y-3 overflow-hidden max-h-64">

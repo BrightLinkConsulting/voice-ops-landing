@@ -26,12 +26,11 @@ export default function WhatItReplaces() {
             THE MATH IS SIMPLE
           </div>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-[#F4F4F5] mb-6">
-            Stop Paying $2,500+/Month<br />
-            for Tools That Don&apos;t Talk to Each Other.
+            Replace a Patchwork Stack with One<br />
+            Connected Operating Environment.
           </h2>
           <p className="text-base leading-relaxed text-[#A1A1AA] max-w-3xl mx-auto">
-            Everything below is already included in your Voice Ops subscription.
-            No separate logins. No juggling platforms. One system.
+            The point is not just saving on software. It is reducing operational drag, eliminating handoff friction, and giving your business one coherent operating environment — instead of a pile of disconnected apps that each demand your attention.
           </p>
         </div>
 
@@ -108,7 +107,7 @@ export default function WhatItReplaces() {
                 >
                   <span className="text-lg md:text-2xl font-bold text-[#E8600A]">
                     Starting at $97/mo<br />
-                    <span className="text-sm font-normal text-[#A1A1AA]">with Voice Ops</span>
+                    <span className="text-sm font-normal text-[#A1A1AA]">with BrightLink</span>
                   </span>
                 </td>
               </tr>
@@ -122,7 +121,7 @@ export default function WhatItReplaces() {
             href="#pricing"
             className="px-8 py-4 bg-[#E8600A] text-white rounded-lg font-semibold hover:bg-[#d4570a] transition-all duration-200 hover:shadow-[0_0_30px_rgba(232,96,10,0.4)]"
           >
-            See the Four Tiers &rarr;
+            See Which Layer Fits Your Stage &rarr;
           </a>
         </div>
       </div>
