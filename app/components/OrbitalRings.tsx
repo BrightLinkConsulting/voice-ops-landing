@@ -123,6 +123,40 @@ export default function OrbitalRings() {
 
   return (
     <div className="w-full text-center">
+      {/* Buttons — above diagram on desktop, below on mobile */}
+      <div className="hidden md:flex gap-2 mb-6 w-full">
+        {LAYERS.map((layer) => (
+          <button
+            key={layer.id}
+            onMouseEnter={() => show(layer.id)}
+            onMouseLeave={() => hide()}
+            className="flex flex-col items-center justify-center flex-1 min-w-0 rounded-xl border py-4 px-3 cursor-pointer transition-all duration-200"
+            style={{
+              borderColor: layer.borderColor,
+              background: layer.bg,
+              animation: `btn-glow-${layer.id} ${2.8 + (layer.id - 1) * 0.4}s ease-in-out infinite ${layer.animDelay}`,
+            }}
+          >
+            <span
+              className="font-bold whitespace-nowrap leading-tight"
+              style={{
+                color: layer.color,
+                fontSize: 'clamp(18px, 4.5vw, 28px)',
+                letterSpacing: '-0.3px',
+              }}
+            >
+              {layer.label}
+            </span>
+            <span
+              className="leading-snug text-gray-400"
+              style={{ fontSize: 'clamp(13px, 3vw, 17px)' }}
+            >
+              {layer.sub}
+            </span>
+          </button>
+        ))}
+      </div>
+
       {/* SVG Diagram */}
       <svg
         ref={svgRef}
@@ -220,13 +254,11 @@ export default function OrbitalRings() {
         </g>
       </svg>
 
-      {/* Buttons */}
-      <div className="flex gap-2 mt-4 mb-3 w-full">
+      {/* Buttons — mobile only (touch interaction) */}
+      <div className="flex md:hidden gap-2 mt-4 mb-3 w-full">
         {LAYERS.map((layer) => (
           <button
             key={layer.id}
-            onMouseEnter={() => show(layer.id)}
-            onMouseLeave={() => hide()}
             onTouchStart={() => show(layer.id)}
             onTouchEnd={() => hide()}
             className="flex flex-col items-center justify-center flex-1 min-w-0 rounded-xl border py-4 px-3 cursor-pointer transition-all duration-200"
