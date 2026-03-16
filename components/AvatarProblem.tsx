@@ -6,18 +6,18 @@ const AvatarProblem = () => {
   const cards = [
     {
       number: '01',
-      title: 'Your expertise has a ceiling. Your infrastructure is it.',
-      body: 'The gap between what you deliver and how your business operates is costing you time, clients, and momentum. The problem is not effort. It is the absence of the right operating environment.'
+      title: 'Your message is strong. Your machine is weak.',
+      body: 'The potential is there. The infrastructure to capture it consistently isn\u2019t.'
     },
     {
       number: '02',
-      title: 'You are running the business. The business is not running itself.',
-      body: 'Every hour you spend managing tools, chasing data, and bridging disconnected systems is an hour you are not doing the work that only you can do. The infrastructure should be invisible. Right now it is consuming your week.'
+      title: 'You\u2019re running the business. It\u2019s not running itself.',
+      body: 'Every hour inside dashboards is an hour you\u2019re not doing the work only you can do.'
     },
     {
       number: '03',
-      title: 'You have tried the platforms. They did not solve the real problem.',
-      body: 'GoHighLevel, ClickFunnels, Kajabi \u2014 the platforms are capable. The problem was never the tool. It was the absence of a complete, connected operating environment built to your specific business model and designed to scale with you.'
+      title: 'You\u2019ve tried the platforms. None of them stuck.',
+      body: 'The problem was never the tool. It was the absence of a complete, connected system built around your business.'
     }
   ]
 
@@ -58,25 +58,14 @@ const AvatarProblem = () => {
 
       <div className="relative z-[1] flex flex-col items-center text-center mb-16">
         <p className="text-sm tracking-widest text-brand-orange uppercase mb-4">
-          THIS IS BUILT FOR FOUNDERS WHOSE EXPERTISE OUTGREW THEIR INFRASTRUCTURE
+          WHO THIS IS FOR
         </p>
         <h2 className="font-display text-4xl md:text-5xl font-bold mb-5 md:mb-6 mt-3 md:mt-4">
-          You Have Real Capability. Your Backend{' '}<span className="headline-accent">Doesn&apos;t Reflect It.</span>
+          Your Expertise Is Proven.{' '}<span className="headline-accent">Your Infrastructure Isn&apos;t.</span>
         </h2>
-        <div className="text-[#A1A1AA] text-base md:text-lg leading-relaxed max-w-3xl space-y-4">
-          <p>
-            This is for consultants, advisors, authors, coaches, and expert-led businesses that already have real demand — but know their backend is too fragmented, manual, or founder-dependent to support the next stage of growth.
-          </p>
-          <p>
-            You have built something real. You have a methodology, a track record, a client base that proves your value. But your operating environment has not kept pace with your capability.
-          </p>
-          <p>
-            Your acquisition system is stitched together from tools that do not talk to each other. Your client delivery depends on memory, scattered notes, and instinct. Your operating rhythm is improvised rather than designed. And every new platform you have tried added complexity instead of clarity.
-          </p>
-          <p>
-            That ends here.
-          </p>
-        </div>
+        <p className="text-[#A1A1AA] text-base md:text-lg leading-relaxed max-w-3xl">
+          This is for consultants, advisors, authors, and coaches with real demand — and a backend that can&apos;t keep pace with it.
+        </p>
       </div>
 
       <StaggerContainer>
@@ -98,6 +87,10 @@ const AvatarProblem = () => {
           ))}
         </div>
       </StaggerContainer>
+
+      <p className="text-center mt-8" style={{ fontSize: '1.4em' }}>
+        <span className="headline-accent">That changes today.</span>
+      </p>
     </section>
   )
 }
