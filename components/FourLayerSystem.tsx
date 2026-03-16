@@ -2,7 +2,6 @@
 
 import { StaggerChild, motion } from '@/components/MotionWrapper'
 import OrbitalRings from '@/app/components/OrbitalRings'
-import TerminalChat from '@/components/TerminalChat'
 
 interface Layer {
   number: string
@@ -252,19 +251,36 @@ const FourLayerSystem = () => {
                     ))}
                   </ul>
 
-                  {/* Terminal inside Layer 02 */}
+                  {/* AIOS Screenshot inside Layer 02 */}
                   {layer.badge === 'SIGNATURE' && (
                     <div className="mb-6">
-                      <p className="text-xs font-mono text-gray-500 mb-2">
-                        // Live example — Telegram · AIOS Interface
-                      </p>
-                      <div className="max-h-72 overflow-hidden relative">
-                        <TerminalChat />
-                        <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-[#111114] to-transparent pointer-events-none md:hidden" />
+                      <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10">
+                        {/* iPhone screenshot */}
+                        <div className="relative flex-shrink-0 w-[240px] sm:w-[280px] md:w-[300px]">
+                          {/* Blue glow behind the phone */}
+                          <div
+                            className="absolute inset-0 rounded-3xl blur-2xl opacity-20"
+                            style={{ backgroundColor: '#5AAEE8' }}
+                          />
+                          <img
+                            src="/screenshots/aios-voice-command.png"
+                            alt="AIOS voice command interface on iPhone showing real-time business intelligence through Telegram"
+                            className="relative w-full h-auto rounded-2xl"
+                          />
+                        </div>
+                        {/* Caption alongside */}
+                        <div className="flex-1 text-center md:text-left">
+                          <p className="text-xs font-mono text-gray-500 mb-3 uppercase tracking-wider">
+                            Real conversation · AIOS via Telegram
+                          </p>
+                          <p className="text-base md:text-lg leading-relaxed text-[#A1A1AA]">
+                            Ask for a pulse check. Get your OPI, pipeline status, and flagged clients back in seconds. Request draft messages for at-risk accounts and approve them right from the thread.
+                          </p>
+                          <p className="text-base md:text-lg leading-relaxed text-[#A1A1AA] mt-3">
+                            No dashboard. No login. Just talk to your business.
+                          </p>
+                        </div>
                       </div>
-                      <p className="text-base leading-relaxed text-[#A1A1AA] mt-3 italic">
-                        AIOS connects to your operating environment and gives you a conversational interface into it — instead of a dashboard to navigate.
-                      </p>
                     </div>
                   )}
 
