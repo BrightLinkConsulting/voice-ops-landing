@@ -229,7 +229,7 @@ export default function OrbitalRings() {
             onMouseLeave={() => hide()}
             onTouchStart={() => show(layer.id)}
             onTouchEnd={() => hide()}
-            className="flex flex-col items-center justify-center flex-1 min-w-0 rounded-xl border py-3 px-2 cursor-pointer transition-all duration-200"
+            className="flex flex-col items-center justify-center flex-1 min-w-0 rounded-xl border py-4 px-3 cursor-pointer transition-all duration-200"
             style={{
               borderColor: layer.borderColor,
               background: layer.bg,
@@ -237,18 +237,18 @@ export default function OrbitalRings() {
             }}
           >
             <span
-              className="font-semibold whitespace-nowrap leading-tight"
+              className="font-bold whitespace-nowrap leading-tight"
               style={{
                 color: layer.color,
-                fontSize: 'clamp(12px, 3.2vw, 18px)',
+                fontSize: 'clamp(18px, 4.5vw, 28px)',
                 letterSpacing: '-0.3px',
               }}
             >
               {layer.label}
             </span>
             <span
-              className="leading-tight text-gray-400"
-              style={{ fontSize: 'clamp(10px, 2.2vw, 12px)' }}
+              className="leading-snug text-gray-400"
+              style={{ fontSize: 'clamp(13px, 3vw, 17px)' }}
             >
               {layer.sub}
             </span>
