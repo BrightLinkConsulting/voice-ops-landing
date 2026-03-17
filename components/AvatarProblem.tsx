@@ -1,7 +1,5 @@
 'use client'
 
-import { StaggerContainer, StaggerChild } from '@/components/MotionWrapper'
-
 const AvatarProblem = () => {
   const cards = [
     {
@@ -21,77 +19,174 @@ const AvatarProblem = () => {
     }
   ]
 
-  const particles = [
-    { size: 3, color: 'rgba(232,96,10,0.25)', top: '8%', left: '12%', anim: 'float-0 10s ease-in-out infinite' },
-    { size: 4, color: 'rgba(186,117,23,0.2)', top: '15%', left: '85%', anim: 'float-1 14s ease-in-out infinite' },
-    { size: 2, color: 'rgba(83,74,183,0.2)', top: '35%', left: '6%', anim: 'float-2 12s ease-in-out infinite' },
-    { size: 5, color: 'rgba(232,96,10,0.25)', top: '55%', left: '92%', anim: 'float-3 8s ease-in-out infinite' },
-    { size: 3, color: 'rgba(83,74,183,0.2)', top: '70%', left: '18%', anim: 'float-4 16s ease-in-out infinite' },
-    { size: 4, color: 'rgba(186,117,23,0.2)', top: '25%', left: '50%', anim: 'float-5 18s ease-in-out infinite' },
-    { size: 2, color: 'rgba(232,96,10,0.25)', top: '80%', left: '75%', anim: 'float-6 11s ease-in-out infinite' },
-    { size: 5, color: 'rgba(83,74,183,0.2)', top: '45%', left: '35%', anim: 'float-7 15s ease-in-out infinite' },
-  ]
-
   return (
-    <section
-      id="avatar"
-      className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 lg:py-40"
-    >
-      {/* Floating particles - hidden on mobile */}
-      <div className="hidden md:block">
-        {particles.map((p, i) => (
-          <div
-            key={i}
-            className="absolute rounded-full pointer-events-none"
-            style={{
-              width: p.size,
-              height: p.size,
-              backgroundColor: p.color,
-              top: p.top,
-              left: p.left,
-              animation: p.anim,
-              willChange: 'transform',
-            }}
-          />
-        ))}
-      </div>
-
-      <div className="relative z-[1] flex flex-col items-center text-center mb-16">
-        <p className="text-sm tracking-widest text-brand-orange uppercase mb-4">
-          WHO THIS IS FOR
-        </p>
-        <h2 className="font-display text-4xl md:text-5xl font-bold mb-5 md:mb-6 mt-3 md:mt-4">
-          Your Expertise Is Proven.{' '}<span className="headline-accent">Your Infrastructure Isn&apos;t.</span>
+    <>
+      <section id="avatar" className="avatar-section">
+        <p className="avatar-eyebrow">Who This Is For</p>
+        <h2 className="avatar-headline">
+          Your expertise is proven.<br /><em>Your infrastructure isn&apos;t.</em>
         </h2>
-        <p className="text-[#A1A1AA] text-base md:text-lg leading-relaxed max-w-3xl">
+        <p className="avatar-subtext">
           This is for consultants, advisors, authors, and coaches with real demand — and a backend that can&apos;t keep pace with it.
         </p>
-      </div>
 
-      <StaggerContainer>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 mt-12">
+        <div className="avatar-cards-row">
           {cards.map((card, index) => (
-            <StaggerChild key={index}>
-              <div className="bg-[#111114] border border-[#1E1E24] rounded-xl p-5 md:p-6 hover:border-[#2E2E38] hover:-translate-y-1 transition-all duration-300">
-                <p className="text-4xl font-display font-bold text-brand-orange">
-                  {card.number}
-                </p>
-                <h3 className="text-lg font-semibold text-[#F4F4F5] mt-3">
-                  {card.title}
-                </h3>
-                <p className="text-base text-[#A1A1AA] mt-2 leading-relaxed">
-                  {card.body}
-                </p>
-              </div>
-            </StaggerChild>
+            <div key={index} className="avatar-card">
+              <span className="avatar-step-number">{card.number}</span>
+              <h3 className="avatar-card-title">{card.title}</h3>
+              <p className="avatar-card-body">{card.body}</p>
+            </div>
           ))}
         </div>
-      </StaggerContainer>
 
-      <p className="text-center mt-8" style={{ fontSize: '1.4em' }}>
-        <span className="headline-accent">That changes today.</span>
-      </p>
-    </section>
+        <p className="avatar-closing">That changes today.</p>
+      </section>
+
+      <style jsx>{`
+        .avatar-section {
+          width: 100%;
+          max-width: 1300px;
+          margin: 0 auto;
+          text-align: center;
+          padding: 80px 40px;
+        }
+
+        .avatar-eyebrow {
+          font-family: 'DM Sans', var(--font-body), sans-serif;
+          font-size: 11px;
+          font-weight: 400;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          color: #c86428;
+          margin-bottom: 20px;
+        }
+
+        .avatar-headline {
+          font-family: 'Cormorant Garamond', var(--font-display), serif;
+          font-size: clamp(36px, 5vw, 58px);
+          font-weight: 400;
+          color: #f0ede6;
+          line-height: 1.1;
+          margin-bottom: 20px;
+        }
+
+        .avatar-headline em {
+          font-style: italic;
+          color: #c86428;
+        }
+
+        .avatar-subtext {
+          font-family: 'DM Sans', var(--font-body), sans-serif;
+          font-size: 16px;
+          font-weight: 300;
+          color: rgba(240, 237, 230, 0.48);
+          line-height: 1.65;
+          max-width: 600px;
+          margin: 0 auto 56px;
+        }
+
+        .avatar-cards-row {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 16px;
+          margin-bottom: 52px;
+        }
+
+        .avatar-card {
+          position: relative;
+          padding: 36px 28px 40px;
+          background: rgba(255, 255, 255, 0.035);
+          border: 1px solid rgba(255, 255, 255, 0.09);
+          border-radius: 18px;
+          overflow: hidden;
+          transition: border-color 0.4s ease, background 0.4s ease;
+          text-align: left;
+        }
+
+        .avatar-card::after {
+          content: '';
+          position: absolute;
+          bottom: -30px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 75%;
+          height: 80px;
+          background: radial-gradient(ellipse, rgba(200, 100, 40, 0.22) 0%, transparent 70%);
+          pointer-events: none;
+          opacity: 0.7;
+          transition: opacity 0.4s ease;
+        }
+
+        .avatar-card::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 1px;
+          background: linear-gradient(to right, transparent, rgba(255,255,255,0.12), transparent);
+          border-radius: 18px 18px 0 0;
+        }
+
+        .avatar-card:hover {
+          border-color: rgba(200, 100, 40, 0.35);
+          background: rgba(255, 255, 255, 0.055);
+        }
+
+        .avatar-card:hover::after {
+          opacity: 1;
+        }
+
+        .avatar-step-number {
+          font-family: 'Cormorant Garamond', var(--font-display), serif;
+          font-size: 64px;
+          font-weight: 500;
+          line-height: 1;
+          color: #c86428;
+          display: block;
+          margin-bottom: 20px;
+          letter-spacing: -0.02em;
+        }
+
+        .avatar-card-title {
+          font-family: 'DM Sans', var(--font-body), sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          color: #f0ede6;
+          margin-bottom: 12px;
+          line-height: 1.4;
+          letter-spacing: -0.01em;
+        }
+
+        .avatar-card-body {
+          font-family: 'DM Sans', var(--font-body), sans-serif;
+          font-size: 13.5px;
+          font-weight: 300;
+          color: rgba(240, 237, 230, 0.48);
+          line-height: 1.65;
+        }
+
+        .avatar-closing {
+          font-family: 'Cormorant Garamond', var(--font-display), serif;
+          font-style: italic;
+          font-size: clamp(24px, 3vw, 34px);
+          font-weight: 400;
+          color: #c86428;
+        }
+
+        @media (max-width: 860px) {
+          .avatar-cards-row { grid-template-columns: 1fr 1fr; }
+          .avatar-step-number { font-size: 52px; }
+        }
+
+        @media (max-width: 560px) {
+          .avatar-cards-row { grid-template-columns: 1fr; }
+          .avatar-section { padding: 60px 20px; }
+          .avatar-step-number { font-size: 48px; }
+        }
+      `}</style>
+    </>
   )
 }
 
