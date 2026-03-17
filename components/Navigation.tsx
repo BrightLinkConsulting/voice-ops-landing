@@ -45,8 +45,8 @@ export default function Navigation() {
       <div className="h-full px-4 md:px-8 flex items-center justify-between max-w-7xl mx-auto w-full">
         {/* Logo */}
         <div className="flex items-center space-x-1 font-body uppercase tracking-wider text-sm">
-          <span className="text-[#E8600A] font-semibold">BRIGHTLINK</span>
-          <span className="text-[#A1A1AA]">CONSULTING</span>
+          <span className="text-[#E8600A] font-semibold">CEO</span>
+          <span className="text-[#A1A1AA]">SYSTEMS</span>
         </div>
 
         {/* Desktop Navigation Links */}
