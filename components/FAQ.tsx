@@ -7,24 +7,24 @@ import { AnimatedSection } from '@/components/MotionWrapper';
 export default function FAQ() {
   const faqs = [
     {
-      question: 'I keep seeing OpenClaw agents doing incredible things on YouTube. Is this the same thing?',
-      answer: 'It\u2019s a fair question and it deserves a direct answer.\n\nOpenClaw is powerful infrastructure \u2014 an open toolkit that lets technically skilled people connect AI models to files, apps, and messaging platforms. The results can be genuinely impressive when someone knows how to architect it.\n\nBut that\u2019s exactly the problem: you still have to architect it. OpenClaw has no memory of your business between sessions. It doesn\u2019t know your clients, your pipeline, what a normal week looks like for your retention metrics, or what\u2019s changed since last Tuesday. Every time you use it, you\u2019re briefing a blank slate.\n\nBrightLink is different at a fundamental level. It\u2019s a pre-built, opinionated operating system installed specifically inside your business \u2014 with your GHL pipelines, your client data, your retention intelligence, and your acquisition system all connected and running continuously.\n\nThink of it this way: OpenClaw is infrastructure. BrightLink with AIOS is a running operating environment. Both involve similar underlying technology. Only one of them is configured, connected, and already working inside your specific business context.',
+      question: 'I keep seeing open-source AI agents doing incredible things on YouTube. Is this the same thing?',
+      answer: 'It\u2019s a fair question and it deserves a direct answer.\n\nOpen-source AI agent frameworks are powerful infrastructure \u2014 toolkits that let technically skilled people connect AI models to files, apps, and messaging platforms. The results can be impressive when someone knows how to architect it.\n\nBut that\u2019s exactly the problem: you still have to architect it. Those frameworks have no memory of your business between sessions. They don\u2019t know your clients, your pipeline, what a normal week looks like for your retention metrics, or what\u2019s changed since last Tuesday. Every time you use them, you\u2019re briefing a blank slate.\n\nCEO Systems is different at a fundamental level. It\u2019s a pre-built, opinionated operating environment installed specifically inside your business \u2014 with your GHL pipelines, your client data, your retention intelligence, and your acquisition system all connected and running continuously.\n\nThink of it this way: open-source agents are infrastructure. CEO Systems with AIOS is a running operating environment. Both involve similar underlying technology. Only one of them is configured, connected, and already working inside your specific business context.',
     },
     {
       question: 'Is this a GoHighLevel certification course or a new platform?',
-      answer: 'Neither. BrightLink is a done-for-you service that uses GoHighLevel as the backbone. We build, configure, and optimize your GHL account specifically for voice-triggered operations. You get a fully managed system, not a course or new platform to learn.',
+      answer: 'Neither. CEO Systems is a done-for-you service that uses GoHighLevel as the backbone. We build, configure, and optimize your GHL account as a complete operating environment \u2014 infrastructure, intelligence, and client visibility all connected. You get a fully managed system, not a course or new platform to learn.',
     },
     {
-      question: 'Can I use BrightLink if I already have existing builds in GoHighLevel?',
-      answer: 'Yes. We integrate BrightLink into your existing GHL environment. Our team audits your current setup and builds voice automation on top of what\u2019s already there. We don\u2019t replace\u2014we enhance.',
+      question: 'Can I use CEO Systems if I already have existing builds in GoHighLevel?',
+      answer: 'Yes. We integrate CEO Systems into your existing GHL environment. Our team audits your current setup and builds the operating environment on top of what\u2019s already there. We don\u2019t replace \u2014 we enhance.',
     },
     {
       question: 'How do I know which tier is right for me?',
       answer: 'The fastest way to decide is to ask where your biggest operating gap actually is right now.\n\nIf your acquisition system is fragmented or founder-dependent, start with Starter. You need the infrastructure installed before intelligence has anything to work with.\n\nIf you already have a working acquisition system and you want operating leverage \u2014 faster answers, less dashboard time, a system that briefs you on what matters \u2014 add Signature and activate AIOS.\n\nIf you have an active client base and retention directly affects your revenue, move to Pro. ClientBloom gives you real visibility into what is actually happening inside each client relationship before issues surface.\n\nIf you are operating at a level where the business is performing but you feel the gap between your strategic thinking and your operating rhythm, Pro Plus and CE.OS is the right layer.\n\nYou can start at any tier and move up at any time. The layers are cumulative \u2014 every tier includes everything below it.',
     },
     {
-      question: 'How long until my BrightLink operating environment is live?',
-      answer: 'Typical timeline: 2-3 weeks from contract to launch. We conduct discovery calls, build your systems in a staging environment, run quality assurance, then deploy to production. Timeline can vary based on complexity and your responsiveness to our questions.',
+      question: 'How long until my CEO Systems operating environment is live?',
+      answer: 'Typical timeline: 7\u201314 business days from contract to launch. We conduct discovery calls, build your systems in a staging environment, run quality assurance, then deploy to production. Timeline can vary based on complexity and your responsiveness to our questions.',
     },
     {
       question: 'What happens if I cancel?',
@@ -32,7 +32,7 @@ export default function FAQ() {
     },
     {
       question: 'Who is this right for?',
-      answer: 'BrightLink is ideal for founders, agency owners, and service-based businesses drowning in operational overhead. You need to have some existing processes and a clear vision of your business model. It\u2019s not for one-off projects\u2014it\u2019s for sustainable systems.',
+      answer: 'CEO Systems is built for founders, consultants, coaches, and service-based business owners who have real demand and a backend that can\u2019t keep pace. You need to have some existing processes and a clear vision of your business model. This is not for one-off projects \u2014 it is for businesses that need a connected, continuously running operating environment.',
     },
     {
       question: 'What do I need to provide to get started?',

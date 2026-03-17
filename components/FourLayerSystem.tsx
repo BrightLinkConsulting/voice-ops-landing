@@ -48,7 +48,7 @@ const layers: Layer[] = [
       'Dedicated AIOS BI Agent via Telegram',
       'Conversational interface into business data',
       'Pipeline queries and CRM actions on demand',
-      'Voice and text commands across your full stack',
+      'Conversational commands across your full stack via Telegram',
       'Daily operating brief, delivered before you ask',
     ],
     whoFor:
@@ -105,7 +105,7 @@ const layers: Layer[] = [
 const layerScreenshots: Record<string, { src: string; alt: string; label: string; lines: string[]; glowColor: string }> = {
   STARTER: {
     src: '/screenshots/layer1-infrastructure.png',
-    alt: 'BrightLink system confirmation showing all infrastructure installed and running',
+    alt: 'CEO Systems confirmation showing all infrastructure installed and running',
     label: 'What you see after installation',
     lines: [
       'Six green checkmarks. Everything installed, branded, and running. Funnels, automations, CRM, communities. You didn\'t configure any of it.',
@@ -115,7 +115,7 @@ const layerScreenshots: Record<string, { src: string; alt: string; label: string
   },
   SIGNATURE: {
     src: '/screenshots/aios-voice-command.png',
-    alt: 'AIOS voice command interface on iPhone showing real-time business intelligence through Telegram',
+    alt: 'AIOS conversational interface on iPhone showing real-time business intelligence through Telegram',
     label: 'Real conversation · AIOS via Telegram',
     lines: [
       'Ask for a pulse check. Get your pipeline status and flagged clients back in seconds. Request draft messages and approve them right from the thread.',
@@ -189,7 +189,7 @@ const FourLayerSystem = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
           {[
             {
-              label: '[ Telegram \u00b7 Voice Command Interface ]',
+              label: '[ Telegram \u00b7 AIOS Conversational Interface ]',
               caption: 'Send instructions, query your pipeline, update client records \u2014 all through the AIOS interface on your phone.',
               path: '/screenshots/telegram.png',
             },
@@ -349,7 +349,7 @@ const FourLayerSystem = () => {
 
       {/* Closing line */}
       <p className="text-xl font-semibold text-center text-white mt-8">
-        The system installs the machine. AIOS makes it intelligent. ClientBloom protects the client layer. CE.OS sharpens the executive.
+        The system installs the foundation. AIOS makes it intelligent. ClientBloom protects the client layer. CE.OS sharpens the executive.
       </p>
     </section>
   )

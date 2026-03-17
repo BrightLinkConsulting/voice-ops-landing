@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
           {/* Left: Logo and tagline */}
           <div>
-            <h3 className="font-bold text-[#F4F4F5] mb-3">BRIGHTLINK CONSULTING</h3>
+            <h3 className="font-bold text-[#F4F4F5] mb-3">CEO SYSTEMS</h3>
             <p className="text-sm text-[#52525B]">
               Installed Infrastructure. Expanding Intelligence. Expert-Led Businesses.
             </p>
@@ -48,7 +48,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-[#1E1E24] pt-8 mt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-[#52525B]">
-            © 2026 BrightLink Consulting. All rights reserved.
+            © 2026 CEO Systems by BrightLink Consulting. All rights reserved.
           </p>
 
           <div className="flex items-center gap-6">

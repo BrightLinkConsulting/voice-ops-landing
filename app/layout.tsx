@@ -22,12 +22,12 @@ const mono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'BrightLink Consulting — Installed Infrastructure. Expanding Intelligence.',
-  description: 'A done-for-you business system installation: GoHighLevel CRM snapshot + AI Operating System you command by voice through Telegram. Built for subject matter experts ready to scale.',
+  title: 'CEO Systems — Installed Infrastructure. Expanding Intelligence.',
+  description: 'A done-for-you operating environment for expert-led businesses: infrastructure, intelligence, client visibility, and executive operating capability — installed in 7-14 days.',
   metadataBase: new URL('https://voiceops.brightlinkconsulting.com'),
   openGraph: {
-    title: 'BrightLink Consulting — Installed Infrastructure. Expanding Intelligence.',
-    description: 'Stop managing your business. Start commanding it. Complete GHL system + AI voice command layer installed in 7-14 days.',
+    title: 'CEO Systems — Installed Infrastructure. Expanding Intelligence.',
+    description: 'Your business infrastructure, installed and running. AIOS intelligence, ClientBloom retention, and CE.OS executive capability — all inside one connected operating environment.',
     type: 'website',
   },
 }

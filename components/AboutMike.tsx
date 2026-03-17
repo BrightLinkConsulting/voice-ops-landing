@@ -23,7 +23,7 @@ export default function AboutMike() {
               </p>
 
               <p>
-                BrightLink Consulting is the clearest expression of the work I have spent years building toward — not just funnels, not just automations, and not just another AI feature. It is a connected operating environment for expert-led businesses that need their infrastructure to finally catch up with their capability.
+                CEO Systems is the clearest expression of the work I have spent years building toward — not just funnels, not just automations, and not just another AI feature. It is a connected operating environment for expert-led businesses that need their infrastructure to finally catch up with their capability.
               </p>
 
               <p>
@@ -36,7 +36,7 @@ export default function AboutMike() {
                 Mike Walker, Founder & CEO
               </p>
               <p className="text-sm text-[#A1A1AA]">
-                Two-Time Amazon #1 Best Selling Author: The Systems-Thinking Visionary and The Exceptional Experience
+                Amazon #1 Best Selling Author of The Exceptional Experience and The Systems-Thinking Visionary
               </p>
             </div>
           </div>

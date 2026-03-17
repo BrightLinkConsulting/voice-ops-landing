@@ -12,7 +12,7 @@ const rows = [
   { feature: 'Community Platform', replaces: 'Circle, Skool', cost: '$49–$99+/mo' },
   { feature: 'Workflow Automations', replaces: 'Zapier, Make', cost: '$49–$169+/mo' },
   { feature: 'Website Builder', replaces: 'Webflow, Squarespace', cost: '$29–$79+/mo' },
-  { feature: 'Voice Command Business Agent', replaces: 'Nothing else offers this', cost: 'Priceless' },
+  { feature: 'AI Business Intelligence Agent', replaces: 'Nothing else offers this', cost: 'Priceless' },
   { feature: 'Client Retention Intelligence', replaces: 'Gainsight, ChurnZero', cost: '$500–$2,000+/mo' },
   { feature: 'CEO Operating System', replaces: 'EOS/Traction consulting', cost: '$1,000–$5,000+/mo' },
 ];
@@ -106,7 +106,7 @@ export default function WhatItReplaces() {
                 >
                   <span className="text-lg md:text-2xl font-bold text-[#E8600A]">
                     Starting at $97/mo<br />
-                    <span className="text-sm font-normal text-[#A1A1AA]">with BrightLink</span>
+                    <span className="text-sm font-normal text-[#A1A1AA]">with CEO Systems</span>
                   </span>
                 </td>
               </tr>

@@ -40,7 +40,7 @@ const LAYERS = [
     ringId: 'r2',
     fillId: 'f2',
     lblId: 'lbl2',
-    lblText: '02 · Voice-Command Business Intelligence',
+    lblText: '02 · AIOS Business Intelligence',
     lblFill: '#5AAEE8',
     lblY: 124,
     r: 141,
@@ -226,7 +226,7 @@ export default function OrbitalRings() {
         <text id="lbl2" x="340" y="124" textAnchor="middle" dominantBaseline="central"
           fontSize="10" fontWeight="500" fontFamily="var(--font-body)" fill="#5AAEE8" opacity="0"
           style={{ transition: 'opacity 0.35s ease', pointerEvents: 'none' }}>
-          02 · Voice-Command Business Intelligence
+          02 · AIOS Business Intelligence
         </text>
         <text id="lbl1" x="340" y="167" textAnchor="middle" dominantBaseline="central"
           fontSize="10" fontWeight="500" fontFamily="var(--font-body)" fill="#E4A124" opacity="0"

@@ -8,7 +8,7 @@ export default function ComparisonTable() {
     { name: 'All 4 funnel types installed', diy: false, starter: true, signature: true, pro: true, proPlus: true },
     { name: 'Community infrastructure', diy: false, starter: true, signature: true, pro: true, proPlus: true },
     { name: 'Business Intelligence Agent', diy: false, starter: false, signature: true, pro: true, proPlus: true },
-    { name: 'Voice command interface', diy: false, starter: false, signature: true, pro: true, proPlus: true },
+    { name: 'AIOS intelligence layer', diy: false, starter: false, signature: true, pro: true, proPlus: true },
     { name: 'Daily morning brief', diy: false, starter: false, signature: true, pro: true, proPlus: true },
     { name: 'ClientBloom intelligence', diy: false, starter: false, signature: false, pro: true, proPlus: true },
     { name: 'Client retention scoring (CRS)', diy: false, starter: false, signature: false, pro: true, proPlus: true },
@@ -102,7 +102,7 @@ export default function ComparisonTable() {
         </div>
 
         <p className="text-xs text-[#52525B] text-center mt-8 max-w-3xl mx-auto">
-          *DIY/GHL column reflects self-managed setups using standard GHL tools and publicly available snapshot resources. No voice command or AI intelligence layer is included in any off-the-shelf GHL configuration.
+          *DIY/GHL column reflects self-managed setups using standard GHL tools and publicly available snapshot resources. No AI intelligence layer is included in any off-the-shelf GHL configuration.
         </p>
       </div>
     </AnimatedSection>

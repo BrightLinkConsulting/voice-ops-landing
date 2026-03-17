@@ -39,7 +39,7 @@ export default function VSLVideo() {
               <blockquote className="italic text-[#A1A1AA] text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
                 "I was driving when a client popped into my head. I sent a voice note to my AI agent, the email went out, the CRM updated — all before I reached the next stoplight. That's the point: the system runs the business so you can run the vision."
               </blockquote>
-              <p className="text-[#52525B] text-sm mt-4 font-semibold">— Mike Walker, Founder, BrightLink Consulting</p>
+              <p className="text-[#52525B] text-sm mt-4 font-semibold">— Mike Walker, Founder, CEO Systems</p>
             </div>
           </div>
         </AnimatedSection>
