@@ -1,6 +1,6 @@
 'use client';
 
-import { X, RefreshCw, Layers, Shield } from 'lucide-react';
+import { X } from 'lucide-react';
 import { AnimatedSection, motion } from '@/components/MotionWrapper';
 
 const OrangeCheck = () => (
@@ -153,23 +153,6 @@ export default function PricingTiers() {
     },
   ];
 
-  const howTiersWork = [
-    {
-      icon: RefreshCw,
-      label: 'Monthly subscription',
-      description: 'Cancel anytime. Your operating environment runs as long as your subscription does.',
-    },
-    {
-      icon: Layers,
-      label: 'Cumulative layers',
-      description: 'Every tier includes everything below it. Add the next layer when you are ready.',
-    },
-    {
-      icon: Shield,
-      label: 'Your sub-account',
-      description: 'Everything is installed inside your GHL sub-account. It is yours to operate.',
-    },
-  ];
 
   return (
     <AnimatedSection id="pricing" className="relative overflow-hidden py-20 md:py-28 lg:py-40 px-4">
@@ -287,21 +270,6 @@ export default function PricingTiers() {
           })}
         </div>
 
-        {/* How Tiers Work */}
-        <div className="flex flex-col md:flex-row gap-4 md:gap-6 lg:gap-8 mt-12">
-          {howTiersWork.map((item, idx) => {
-            const IconComponent = item.icon;
-            return (
-              <div key={idx} className="flex-1 flex items-start gap-3 bg-[#111114] border border-[#1E1E24] rounded-xl p-5 md:py-12 md:px-5">
-                <IconComponent className="w-10 h-10 text-brand-orange flex-shrink-0 mt-0.5" />
-                <div>
-                  <p className="font-semibold text-lg text-[#F4F4F5] mb-1">{item.label}</p>
-                  <p className="text-base leading-relaxed text-[#A1A1AA]">{item.description}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
       </div>
 
       <style jsx>{`
